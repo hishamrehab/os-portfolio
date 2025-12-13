@@ -78,3 +78,37 @@ export const WINDOW_CONFIG = {
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
+
+
+
+export const techStack = [
+  {
+    category: "Core Frontend",
+    items: ["React.js", "Next.js (App & Pages Router)", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+  },
+  {
+    category: "Advanced & 3D",
+    items: ["Three.js", "GSAP", "Framer Motion"],
+  },
+  {
+    category: "State & Data",
+    items: ["React Query (TanStack Query)", "Redux Toolkit + RTK Query", "Zustand"],
+  },
+  {
+    category: "Styling & Components",
+    items: ["Tailwind CSS", "Shadcn/UI", "Radix UI Primitives", "Sass/SCSS", "Material UI", "Styled Components", "CSS Modules", "Bootstrap"],
+  },
+  {
+    category: "Backend & CMS",
+    items: ["Node.js", "Directus (Headless CMS)", "REST & GraphQL APIs", "JWT & OAuth"],
+  },
+  {
+    category: "Databases & DevOps",
+    items: ["PostgreSQL", "MySQL", "SQLite", "Docker & Docker Compose", "Vercel", "Netlify", "GitHub Actions", "Firebase", "Git"],
+  },
+  {
+    category: "Fundamentals",
+    items: ["OOP", "Data Structures & Algorithms", "System Design (LLD/HLD)", "Responsive Design", "Performance Optimization"],
+  },
+];
+
