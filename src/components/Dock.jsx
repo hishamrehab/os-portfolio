@@ -27,9 +27,7 @@ const Dock = () => {
     duration: 0.2,
     ease: "power1.out"
    })
-
      });
-  
 };
 
 const handelMouseMove = (e) => {
