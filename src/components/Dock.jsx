@@ -70,7 +70,8 @@ dock.addEventListener("mouseleave" ,resetIcons);
 
 
 
-      if(window.canOpen) {
+      // toggle by checking the window's current state
+      if (window.isOpen) {
         closeWindow(app.id);
       } else {
         openWindow(app.id)

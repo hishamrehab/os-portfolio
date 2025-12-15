@@ -37,6 +37,7 @@ Adding a new window/app (practical steps)
 
 Debugging tips
 - If Dock click prints `Window not found for app ...`, double-check `id` name is the same in `dockApps` and `WINDOW_CONFIG`.
+- If clicking an app only opens it and never closes, check that `Dock.jsx` toggles using `windows[id].isOpen` (the code previously checked `window.canOpen`, which is undefined).
 - If animations don't run, confirm `useGSAP` / `useRef` is returning a DOM element and that `gsap` and `@gsap/react` are installed.
 - For missing image errors, ensure path matches public folder and casing is correct (Windows is case-insensitive; servers may be case-sensitive).
 
