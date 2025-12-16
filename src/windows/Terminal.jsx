@@ -32,7 +32,7 @@ const Terminal = () => {
                <h3>{category}</h3>
                <ul>
                 {items.map((item, index) => (
-                <li key={index} className="flex items-center">
+                <li key={index} className="flex items-center flex-wrap ">
                    {item}{index < items.length - 1 ? ",": ""}
                 </li>
              ))}

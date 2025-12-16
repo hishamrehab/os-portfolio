@@ -29,13 +29,13 @@ export const navIcons = [
 export const dockApps = [
   {
     id: "finder",
-    name: "Portfolio", 
+    name: "Frontend Mastery", 
     icon: "finder.png",
     canOpen: true,
   },
-  {
+ {
     id: "safari",
-    name: "Articles",
+    name: "Dev Docs",        
     icon: "safari.png",
     canOpen: true,
   },
@@ -66,6 +66,69 @@ export const dockApps = [
 ];
 
 
+export const blogPosts = [
+
+  {
+    id: 1,
+    date: "Jul 1, 2025",  // Example date; update as needed
+    title: "JavaScript Mastery: In-Depth Guide for Modern Development",
+    image: "/images/js-guide.png",  // Add your image
+    link: "https://github.com/hishamrehab/JavaScript-Guide",
+  },
+
+  {
+    id: 2,
+    date: "Jun 15, 2025",
+    title: "React Mastery: Comprehensive Guide with Real-World Examples",
+    image: "/images/react-guide.png",
+    link: "https://github.com/hishamrehab/React-Guide",
+  },
+
+
+   {
+    id: 3,
+    date: "May 20, 2025",
+    title: "Next.js Mastery: Building Scalable Apps from Scratch",
+    image: "/images/nextjs-guide.png",
+    link: "https://github.com/hishamrehab/nextjs-guide",
+  },
+ {
+    id: 4,
+    date: "Sep 9, 2025",
+    title: "React Typescript Explained: What It Is, Why It Matters, and How to Master It",  // Existing, fits well
+    image: "/images/blog1.png",
+    link: "https://github.com/hishamrehab/React-Typescript",
+  },
+  
+  {
+    id: 7,
+    date: "Apr 10, 2025",
+    title: "Tailwind CSS Mastery: Efficient Styling for Modern Web Apps",
+    image: "/images/tailwind-guide.png",
+    link: "https://github.com/hishamrehab/Tailwind-CSS",
+  },
+ 
+  {
+    id: 2,
+    date: "Aug 28, 2025",
+    title: "The Ultimate Guide to Mastering Three.js for 3D Development",  // Existing
+    image: "/images/blog2.png",
+    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+  },
+  {
+    id: 3,
+    date: "Aug 15, 2025",
+    title: "The Ultimate Guide to Mastering GSAP Animations",  // Existing
+    image: "/images/blog3.png",
+    link: "https://github.com/hishamrehab/GSAP",
+  },
+
+  
+ 
+];
+
+
+
 export const INITIAL_Z_INDEX = 1000;
 
 export const WINDOW_CONFIG = {
@@ -81,34 +144,62 @@ export const WINDOW_CONFIG = {
 
 
 
+
 export const techStack = [
   {
     category: "Core Frontend",
-    items: ["React.js", "Next.js (App & Pages Router)", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+    items: ["React.js", "Next.js", "TypeScript", 
+      "JavaScript (ES6+)", "HTML5", "CSS3"],
   },
   {
-    category: "Advanced & 3D",
+    category: "Advanced UI & 3D Interactions",
     items: ["Three.js", "GSAP", "Framer Motion"],
   },
   {
-    category: "State & Data",
+    category: "State Management & Data Fetching",
     items: ["React Query (TanStack Query)", "Redux Toolkit + RTK Query", "Zustand"],
   },
   {
     category: "Styling & Components",
-    items: ["Tailwind CSS", "Shadcn/UI", "Radix UI Primitives", "Sass/SCSS", "Material UI", "Styled Components", "CSS Modules", "Bootstrap"],
+    items: [
+      "Tailwind CSS",
+       "Shadcn/UI",
+        "Radix UI",
+         "Sass/SCSS",
+          "Material UI",
+          "Styled Components",
+          "CSS Modules", 
+        "Bootstrap"
+      ],
   },
   {
-    category: "Backend & CMS",
-    items: ["Node.js", "Directus (Headless CMS)", "REST & GraphQL APIs", "JWT & OAuth"],
+    category: "Backend & APIs",
+    items: [
+       "Node.js",
+      "REST & GraphQL APIs",
+      "Authentication (JWT, OAuth2)",
+      "Headless CMS (Directus)"
+    ],
   },
   {
     category: "Databases & DevOps",
-    items: ["PostgreSQL", "MySQL", "SQLite", "Docker & Docker Compose", "Vercel", "Netlify", "GitHub Actions", "Firebase", "Git"],
+    items: [
+      "PostgreSQL",
+       "MySQL", 
+       "SQLite", 
+      "Docker & Docker Compose", 
+    "Vercel & Netlify",
+       "CI/CD (GitHub Actions)",
+       "Firebase",
+        "Git"
+      ],
   },
   {
-    category: "Fundamentals",
-    items: ["OOP", "Data Structures & Algorithms", "System Design (LLD/HLD)", "Responsive Design", "Performance Optimization"],
+    category: "Professional Engineering",
+    items: ["OOP",
+       "Data Structures & Algorithms", 
+       "System Design (LLD/HLD)", 
+       "Responsive Design", "Performance Optimization"],
   },
 ];
 
