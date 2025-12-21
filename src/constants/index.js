@@ -67,13 +67,7 @@ export const dockApps = [
     name: "Skills", // was "Terminal"
     icon: "terminal.png",
     canOpen: true,
-  },
-  {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
-  },
+  }
 ];
 
 
@@ -81,7 +75,7 @@ export const blogPosts = [
 
   {
     id: 1,
-    date: "Jul 1, 2025",  // Example date; update as needed
+    date: "Jul 1, 2025",  
     title: "JavaScript Mastery: In-Depth Guide for Modern Development",
     image: "/images/js-guide.png",  // Add your image
     link: "https://github.com/hishamrehab/JavaScript-Guide",
@@ -129,7 +123,7 @@ export const blogPosts = [
   {
     id: 3,
     date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",  // Existing
+    title: "The Ultimate Guide to Mastering GSAP Animations",  
     image: "/images/blog3.png",
     link: "https://github.com/hishamrehab/GSAP",
   },
@@ -222,28 +216,14 @@ export const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
-  },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://github.com/hishamrehab",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/hisham-rehab/",
   },
 ];
 
@@ -640,8 +620,8 @@ const WORK_LOCATION = {
       name: "Nike Ecommerce Website Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-10 left-5", 
+      windowPosition: "top-[5vh] left-5", 
       children: [
         {
           id: 1,
