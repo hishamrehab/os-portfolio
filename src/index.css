@@ -125,7 +125,7 @@ body {
 
 
 #safari {
-  @apply w-3xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+  @apply w-3xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden max-lg:w-[90%] max-lg:left-[5%] max-lg:top-32 max-md:w-[95%] max-md:left-[2.5%] max-md:top-20 max-sm:w-[98%] max-sm:left-[1%] max-sm:top-12;
 
   .search {
     @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
@@ -136,32 +136,96 @@ body {
   }
 
   .blog {
-    @apply bg-white p-3 max-w-3xl mx-auto;
+    @apply bg-white p-3 sm:p-4 md:p-5 max-w-3xl mx-auto max-sm:p-2;
 
     h2 {
-      @apply text-xl font-bold text-pink-600 mb-10;
+      @apply text-xl sm:text-xl md:text-2xl font-bold text-pink-600 mb-8 sm:mb-10 max-sm:mb-6;
     }
 
     .blog-post {
-      @apply grid grid-cols-12 space-x-5;
+      @apply grid grid-cols-12 gap-3 sm:gap-5 max-sm:gap-2 max-sm:grid-cols-1;
 
       img {
         @apply size-full rounded-md object-cover;
       }
 
-        .content {
-          @apply col-span-8 space-y-3;
+      .content {
+        @apply col-span-8 space-y-3 max-sm:col-span-1 max-sm:space-y-2;
 
         p {
           @apply text-xs text-gray-500;
         }
 
         h3 {
-          @apply font-semibold text-base text-gray-800;
+          @apply font-semibold text-base sm:text-base md:text-lg text-gray-800 max-sm:text-sm;
         }
 
         a {
-          @apply text-blue-600 font-semibold text-xs hover:underline flex items-center gap-3;
+          @apply text-blue-600 font-semibold text-xs hover:underline flex items-center gap-2 sm:gap-3;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #safari {
+    @apply rounded-lg;
+
+    .blog {
+      @apply p-3;
+
+      h2 {
+        @apply text-lg mb-6;
+      }
+
+      .blog-post {
+        @apply gap-3;
+
+        .content {
+          @apply space-y-2;
+
+          h3 {
+            @apply text-base;
+          }
+
+          p {
+            @apply text-xs;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #safari {
+    @apply w-[98%] left-[1%] top-16 rounded-lg;
+
+    .blog {
+      @apply p-2;
+
+      h2 {
+        @apply text-base mb-4;
+      }
+
+      .blog-post {
+        @apply grid-cols-1 gap-2;
+
+        .content {
+          @apply space-y-1.5;
+
+          p {
+            @apply text-xs;
+          }
+
+          h3 {
+            @apply text-sm font-semibold;
+          }
+
+          a {
+            @apply text-xs gap-2;
+          }
         }
       }
     }
