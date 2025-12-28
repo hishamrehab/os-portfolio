@@ -1,4 +1,4 @@
-import { Navbar , Welcome , Dock } from "./components"
+import { Navbar , Welcome , Dock, Home } from "./components"
 // import gsap from "gsap" // Commented out since not used
 // import { Draggable }from "gsap/Draggable" // Commented out to fix Vercel build issue
 import { Finder, Resume, Safari, Terminal , Text , Image, Contact} from "./windows"
@@ -18,6 +18,7 @@ const App = () => {
     <Text />
     <Image />
     <Contact />
+    <Home />
  
   </main>
   )

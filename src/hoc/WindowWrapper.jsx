@@ -2,11 +2,13 @@ import { useLayoutEffect, useRef } from "react";
 import useWindowStore from "../store/window.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-// import { Draggable } from "gsap/all"; // Commented out to fix Vercel build issue
+import { Draggable } from "gsap/all";
+
+gsap.registerPlugin(Draggable);
 
 const WindowWrapper = (Component, windowKey) => {
   const Wrapped = (props) => {
-    const { windows } = useWindowStore();
+    const { windows, focusWindow } = useWindowStore();
     const { isOpen, zIndex } = windows[windowKey];
     const ref = useRef(null);
 
@@ -22,16 +24,16 @@ const WindowWrapper = (Component, windowKey) => {
       })
     }, [isOpen]);
 
-    // Draggable functionality commented out to fix Vercel build issue
-    // useGSAP(() => {
-    //   const el = ref.current;
-    //   if (!el) return;
+    useGSAP(() => {
+      const el = ref.current;
+      if (!el || !isOpen) return;
 
-    //   const [instance] = Draggable.create(el, {
-    //     onPress: () => focusWindow(windowKey)
-    //   });
-    //   return () => instance.kill();
-    // }, [])
+      const [instance] = Draggable.create(el, {
+        onPress: () => focusWindow(windowKey),
+        trigger: el
+      });
+      return () => instance.kill();
+    }, [isOpen, focusWindow, windowKey]);
 
     useLayoutEffect(() => {
       const el = ref.current;
@@ -41,7 +43,8 @@ const WindowWrapper = (Component, windowKey) => {
 
 
     return <section id={windowKey} ref={ref} style={{
-      zIndex
+      zIndex,
+      cursor: "grab"
     }} className="absolute">
       <Component {...props} />
     </section>
