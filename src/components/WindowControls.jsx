@@ -1,4 +1,4 @@
-import useWindowStore from "../store/window";
+import useWindowStore from "../store/window.js";
 
 const WindowControls = ({target  }) => {
     const { closeWindow } = useWindowStore();

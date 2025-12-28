@@ -1,7 +1,7 @@
 import React from 'react'
 import { WindowControls } from '../components';
 import WindowWrapper from '../hoc/WindowWrapper';
-import useWindowStore from '../store/window';
+import useWindowStore from '../store/window.js';
 
 const ImageWindowContent= () => {
  const {windows} = useWindowStore();

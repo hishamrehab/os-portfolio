@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from "react";
-import useWindowStore from "../store/window";
+import useWindowStore from "../store/window.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 // import { Draggable } from "gsap/all"; // Commented out to fix Vercel build issue
