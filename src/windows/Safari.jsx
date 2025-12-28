@@ -51,23 +51,7 @@ const Safari = () => {
           />
         </div>
 
-        <div className="flex-1 flex-center gap-3">
-          <ShieldHalf className="icon" />
-          <div className="search">
-            <Search className="icon" />
-            <input
-              type="text"
-              className="flex-1"
-              placeholder="Search or enter doc name..."
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center gap-5">
-          <Share className="icon" />
-          <Plus className="icon" />
-          <Copy className="icon" />
-        </div>
+    
       </div>
 
       <div className="blog">
@@ -81,7 +65,7 @@ const Safari = () => {
         <div className="space-y-8">
           {visiblePosts.map(({ id, image, title, date, link }) => (
             <div key={id} className="blog-post">
-              <div className="col-span-4">
+              <div className="col-span-3">
                 <img alt={title} src={image} />
               </div>
 
