@@ -12,14 +12,14 @@ import {
 } from "lucide-react";
 import { WindowControls } from "../components";
 import WindowWrapper from "../hoc/WindowWrapper";
-import { blogPosts } from "../constants";
+import { devDocs } from "../constants";
 
 const Safari = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const postsPerPage = 3;
 
-  const totalPosts = blogPosts.length;
-  const visiblePosts = blogPosts.slice(currentIndex, currentIndex + postsPerPage);
+  const totalPosts = devDocs.length;
+  const visiblePosts = devDocs.slice(currentIndex, currentIndex + postsPerPage);
 
   const goNext = () => {
     if (currentIndex + postsPerPage < totalPosts) {
@@ -81,7 +81,7 @@ const Safari = () => {
         <div className="space-y-8">
           {visiblePosts.map(({ id, image, title, date, link }) => (
             <div key={id} className="blog-post">
-              <div className="col-span-2">
+              <div className="col-span-4">
                 <img alt={title} src={image} />
               </div>
 

@@ -40,22 +40,17 @@ export const navIcons = [
 export const dockApps = [
   {
     id: "finder",
-    name: "porfolio", 
+    name: "porfolio",
     icon: "finder.png",
     canOpen: true,
   },
- {
+  {
     id: "safari",
-    name: "Dev Docs",        
+    name: "Dev Docs",
     icon: "safari.png",
     canOpen: true,
   },
-  {
-    id: "photos",
-    name: "Gallery", 
-    icon: "photos.png",
-    canOpen: true,
-  },
+
   {
     id: "contact",
     name: "Contact", // or "Get in touch"
@@ -71,13 +66,13 @@ export const dockApps = [
 ];
 
 
-export const blogPosts = [
+export const devDocs = [
 
   {
     id: 1,
-    date: "Jul 1, 2025",  
+    date: "Jul 1, 2025",
     title: "JavaScript Mastery: In-Depth Guide for Modern Development",
-    image: "/images/js-guide.png",  // Add your image
+    image: "/images/js-guide.png",
     link: "https://github.com/hishamrehab/JavaScript-Guide",
   },
 
@@ -90,21 +85,21 @@ export const blogPosts = [
   },
 
 
-   {
+  {
     id: 3,
     date: "May 20, 2025",
     title: "Next.js Mastery: Building Scalable Apps from Scratch",
     image: "/images/nextjs-guide.png",
     link: "https://github.com/hishamrehab/nextjs-guide",
   },
- {
+  {
     id: 4,
     date: "Sep 9, 2025",
     title: "React Typescript Explained: What It Is, Why It Matters, and How to Master It",  // Existing, fits well
     image: "/images/blog1.png",
     link: "https://github.com/hishamrehab/React-Typescript",
   },
-  
+
   {
     id: 7,
     date: "Apr 10, 2025",
@@ -112,7 +107,7 @@ export const blogPosts = [
     image: "/images/tailwind-guide.png",
     link: "https://github.com/hishamrehab/Tailwind-CSS",
   },
- 
+
   {
     id: 2,
     date: "Aug 28, 2025",
@@ -123,13 +118,13 @@ export const blogPosts = [
   {
     id: 3,
     date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",  
+    title: "The Ultimate Guide to Mastering GSAP Animations",
     image: "/images/blog3.png",
     link: "https://github.com/hishamrehab/GSAP",
   },
 
-  
- 
+
+
 ];
 
 
@@ -137,7 +132,7 @@ export const blogPosts = [
 export const INITIAL_Z_INDEX = 1000;
 
 export const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  finder: { isOpen: true, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
@@ -153,7 +148,7 @@ export const WINDOW_CONFIG = {
 export const techStack = [
   {
     category: "Core Frontend",
-    items: ["React.js", "Next.js", "TypeScript", 
+    items: ["React.js", "Next.js", "TypeScript",
       "JavaScript (ES6+)", "HTML5", "CSS3"],
   },
   {
@@ -168,19 +163,19 @@ export const techStack = [
     category: "Styling & Components",
     items: [
       "Tailwind CSS",
-       "Shadcn/UI",
-        "Radix UI",
-         "Sass/SCSS",
-          "Material UI",
-          "Styled Components",
-          "CSS Modules", 
-        "Bootstrap"
-      ],
+      "Shadcn/UI",
+      "Radix UI",
+      "Sass/SCSS",
+      "Material UI",
+      "Styled Components",
+      "CSS Modules",
+      "Bootstrap"
+    ],
   },
   {
     category: "Backend & APIs",
     items: [
-       "Node.js",
+      "Node.js",
       "REST & GraphQL APIs",
       "Authentication (JWT, OAuth2)",
       "Headless CMS (Directus)"
@@ -190,22 +185,26 @@ export const techStack = [
     category: "Databases & DevOps",
     items: [
       "PostgreSQL",
-       "MySQL", 
-       "SQLite", 
-      "Docker & Docker Compose", 
-    "Vercel & Netlify",
-       "CI/CD (GitHub Actions)",
-       "Firebase",
-        "Git"
-      ],
+      "MySQL",
+      "SQLite",
+      "Docker & Docker Compose",
+      "Vercel & Netlify",
+      "CI/CD (GitHub Actions)",
+      "Firebase",
+      "Git"
+    ],
   },
   {
     category: "Professional Engineering",
-    items: ["OOP",
-       "Data Structures & Algorithms", 
-       "System Design (LLD/HLD)", 
-       "Responsive Design", "Performance Optimization"],
-  },
+    items: [
+      "OOP",
+      "Data Structures & Algorithms",
+      "System Design (LLD/HLD)",
+      "Responsive Design", "Performance Optimization",
+      "Design Patterns",
+      "Architecture"
+    ],
+  }
 ];
 
 
@@ -235,67 +234,67 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-        // Project 1: OnSoftwares
-{
-  id: 100,
-  name: "OnSoftwares",
-  icon: "/images/folder.png",
-  kind: "folder",
-  position: "top-20 right-10",
-  windowPosition: "top-[10vh] right-5",
-  children: [
+    // Project 1: OnSoftwares
     {
-      id: 1061,
-      name: "Project Overview.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-5 left-10",
-      description: [
-        "OnSoftwares: A cutting-edge fullstack SaaS marketplace connecting verified software products, talents, agencies, and clients.",
-        "Innovative features: DNS-based ownership verification, blockchain NFT skill certifications, agency skill inheritance, smart contract escrow payments, reputation scoring, and job matching workflows.",
-        "Responsive frontend built with React, Tailwind CSS, Redux Toolkit, React Hook Form + Zod, Framer Motion, and UI libs (Lucide, FontAwesome, Swiper, React-Select).",
-        "Backend powered by Directus headless CMS for full CRUD on listings/profiles/certifications/reviews/projects, plus analytics dashboards with Chart.js/ECharts.",
-        "Docker-containerized for scalable deployment—showcasing senior fullstack expertise in modern SaaS architecture."
+      id: 100,
+      name: "OnSoftwares",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-20 right-10",
+      windowPosition: "top-[10vh] right-5",
+      children: [
+        {
+          id: 1061,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "OnSoftwares: A cutting-edge fullstack SaaS marketplace connecting verified software products, talents, agencies, and clients.",
+            "Innovative features: DNS-based ownership verification, blockchain NFT skill certifications, agency skill inheritance, smart contract escrow payments, reputation scoring, and job matching workflows.",
+            "Responsive frontend built with React, Tailwind CSS, Redux Toolkit, React Hook Form + Zod, Framer Motion, and UI libs (Lucide, FontAwesome, Swiper, React-Select).",
+            "Backend powered by Directus headless CMS for full CRUD on listings/profiles/certifications/reviews/projects, plus analytics dashboards with Chart.js/ECharts.",
+            "Docker-containerized for scalable deployment—showcasing senior fullstack expertise in modern SaaS architecture."
+          ]
+        },
+        {
+          id: 1067,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Verified listings via automated DNS checks",
+            "- Blockchain NFT certifications for skills/talents",
+            "- Agency inheritance & reputation scoring system",
+            "- Secure escrow payments with smart contracts",
+            "- SEO-optimized pages & advanced analytics dashboards",
+            "- Smooth animations and modular UI components"
+          ]
+        },
+        {
+          id: 1068,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, Redux Toolkit, Tailwind CSS, Framer Motion",
+            "- Forms/Validation: React Hook Form + Zod/Yup",
+            "- UI: Lucide, FontAwesome, Swiper, React-Select",
+            "- CMS/Backend: Directus SDK, Axios",
+            "- Charts: Chart.js + plugins, ECharts",
+            "- Other: React Toastify, SweetAlert2, Lodash, Date-fns",
+            "- Build: Vite, Docker for containerization"
+          ]
+        }
       ]
     },
+    // Project: NVESTIA (Private Client)
     {
-      id: 1067,
-      name: "Key Features.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-15 left-30",
-      description: [
-        "- Verified listings via automated DNS checks",
-        "- Blockchain NFT certifications for skills/talents",
-        "- Agency inheritance & reputation scoring system",
-        "- Secure escrow payments with smart contracts",
-        "- SEO-optimized pages & advanced analytics dashboards",
-        "- Smooth animations and modular UI components"
-      ]
-    },
-    {
-      id: 1068,
-      name: "Tech Stack.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-25 left-40",
-      description: [
-        "- Frontend: React, Redux Toolkit, Tailwind CSS, Framer Motion",
-        "- Forms/Validation: React Hook Form + Zod/Yup",
-        "- UI: Lucide, FontAwesome, Swiper, React-Select",
-        "- CMS/Backend: Directus SDK, Axios",
-        "- Charts: Chart.js + plugins, ECharts",
-        "- Other: React Toastify, SweetAlert2, Lodash, Date-fns",
-        "- Build: Vite, Docker for containerization"
-      ]
-    }
-  ]
-},
-      // Project: NVESTIA (Private Client)
-   {
       id: 1010,  // Or next available
       name: "NVESTIA",
       icon: "/images/folder.png",
@@ -368,13 +367,13 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-         "FILMPIRE: A refined movie discovery platform for intuitive browsing and personalized cinematic experiences.",
-        "Features: Advanced search & filters, user authentication, ratings/reviews, watchlists, dark/light mode, and smart recommendations.",
-        "Tech Stack: React, Redux Toolkit, Material UI, Firebase (auth & database), TMDb API.",
-        "Fully responsive—your panoramic gateway to great films."
-      ],
-    
-    },
+            "FILMPIRE: A refined movie discovery platform for intuitive browsing and personalized cinematic experiences.",
+            "Features: Advanced search & filters, user authentication, ratings/reviews, watchlists, dark/light mode, and smart recommendations.",
+            "Tech Stack: React, Redux Toolkit, Material UI, Firebase (auth & database), TMDb API.",
+            "Fully responsive—your panoramic gateway to great films."
+          ],
+
+        },
         {
           id: 1012,
           name: "moviehub.com",
@@ -406,7 +405,7 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/filmpire1.png",
         },
-      
+
 
         {
           id: 1015,
@@ -418,7 +417,7 @@ const WORK_LOCATION = {
           imageUrl: "/images/filmpire2.png",
         },
 
-          {
+        {
           id: 1016,
           name: "filmpire.png",
           icon: "/images/image.png",
@@ -448,12 +447,12 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
-          description:  [
-        "Storage Management System: A modern Google Drive-inspired cloud storage platform for secure file management and seamless organization.",
-        "Features include: Intuitive dashboard with storage usage charts, categorized views (Documents, Images, Media, Others), recent uploads timeline, global search, and effortless drag-and-drop uploads via React Dropzone.",
-        "Tech Stack: Next.js, React, Tailwind CSS, Shadcn UI (for reusable components), Recharts (visual dashboards), Appwrite (authentication, database & storage backend).",
-        "Fully responsive—your personal cloud vault accessible on any device."
-      ],
+          description: [
+            "Storage Management System: A modern Google Drive-inspired cloud storage platform for secure file management and seamless organization.",
+            "Features include: Intuitive dashboard with storage usage charts, categorized views (Documents, Images, Media, Others), recent uploads timeline, global search, and effortless drag-and-drop uploads via React Dropzone.",
+            "Tech Stack: Next.js, React, Tailwind CSS, Shadcn UI (for reusable components), Recharts (visual dashboards), Appwrite (authentication, database & storage backend).",
+            "Fully responsive—your personal cloud vault accessible on any device."
+          ],
         },
         {
           id: 1022,
@@ -482,7 +481,7 @@ const WORK_LOCATION = {
           position: "top-52 left-80",
           imageUrl: "/images/storage1.png",
         },
-       {
+        {
           id: 1025,
           name: "storage.png",
           icon: "/images/image.png",
@@ -492,7 +491,7 @@ const WORK_LOCATION = {
           imageUrl: "/images/storage2.png",
         },
 
-              {
+        {
           id: 1026,
           name: "storage.png",
           icon: "/images/image.png",
@@ -554,7 +553,7 @@ const WORK_LOCATION = {
           imageUrl: "/images/iphone1.png",
         },
 
-            {
+        {
           id: 1035,
           name: "iphone.png",
           icon: "/images/image.png",
@@ -565,7 +564,7 @@ const WORK_LOCATION = {
         },
 
 
-            {
+        {
           id: 1036,
           name: "iphone.png",
           icon: "/images/image.png",
@@ -574,87 +573,87 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/iphone3.png",
         },
-      
+
       ],
     },
 
     // Project 5: SaaS Excellence Platform
- {
-  id: 105,
-  name: "Xora AI",
-  icon: "/images/folder.png",
-  kind: "folder",
-  position: "top-100 right-60",
-  windowPosition: "top-[45vh] left-5",
-  children: [
     {
-      id: 1051,
-      name: "Project Overview.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-5 right-10",
-      description: [
-        "Xora AI: A sleek, futuristic landing page for an advanced AI SaaS platform specializing in creative workflows.",
-        "Highlights include dark-mode design, interactive pricing tiers (Core/Overdrive/Team), app mockups showcasing AI tools (video editing, code/audio/photo generation), smooth navigation, and bold hero sections.",
-        "Built with modern web tech for a responsive, high-conversion experience—perfect as a professional product storefront.",
-        "Fully optimized for desktop/mobile, with neon accents and 3D-inspired visuals."
+      id: 105,
+      name: "Xora AI",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-100 right-60",
+      windowPosition: "top-[45vh] left-5",
+      children: [
+        {
+          id: 1051,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "Xora AI: A sleek, futuristic landing page for an advanced AI SaaS platform specializing in creative workflows.",
+            "Highlights include dark-mode design, interactive pricing tiers (Core/Overdrive/Team), app mockups showcasing AI tools (video editing, code/audio/photo generation), smooth navigation, and bold hero sections.",
+            "Built with modern web tech for a responsive, high-conversion experience—perfect as a professional product storefront.",
+            "Fully optimized for desktop/mobile, with neon accents and 3D-inspired visuals."
+          ]
+        },
+        {
+          id: 1057,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Dark futuristic theme with glowing elements",
+            "- Tiered pricing cards with highlighted popular plan",
+            "- Multi-platform download prompts (iOS/Android/PC/Web)",
+            "- AI feature showcases (video, code, photo, audio generation)",
+            "- Clean navigation and FAQ sections"
+          ]
+        },
+        {
+          id: 1052,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://saas-business-landing-page.web.app/",
+          position: "top-10 left-20"
+        },
+        {
+          id: 1053,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/SaaS-Excellence-Platform",
+          position: "top-20 right-20"
+        },
+        {
+          id: 1054,
+          name: "Screenshots.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/sass1.png"
+        },
+
+        {
+          id: 1055,
+          name: "Screenshots.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/sass2.png"
+        }
       ]
-    },
-    {
-      id: 1057,
-      name: "Key Features.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-15 left-30",
-      description: [
-        "- Dark futuristic theme with glowing elements",
-        "- Tiered pricing cards with highlighted popular plan",
-        "- Multi-platform download prompts (iOS/Android/PC/Web)",
-        "- AI feature showcases (video, code, photo, audio generation)",
-        "- Clean navigation and FAQ sections"
-      ]
-    },
-    {
-      id: 1052,
-      name: "Live Demo.url",
-      icon: "/images/safari.png",
-      kind: "file",
-      fileType: "url",
-      href: "https://saas-business-landing-page.web.app/",
-      position: "top-10 left-20"
-    },
-    {
-      id: 1053,
-      name: "Source Code.url",
-      icon: "/images/safari.png",
-      kind: "file",
-      fileType: "url",
-      href: "https://github.com/hishamrehab/SaaS-Excellence-Platform",
-      position: "top-20 right-20"
-    },
-    {
-      id: 1054,
-      name: "Screenshots.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 right-80",
-      imageUrl: "/images/sass1.png"
-    },
-  
-     {
-      id: 1055,
-      name: "Screenshots.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 right-80",
-      imageUrl: "/images/sass2.png"
     }
-   ]
-}
   ],
 };
 
@@ -674,7 +673,7 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "Hey! I’m Hisham 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
         "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
         "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
@@ -708,7 +707,7 @@ const RESUME_LOCATION = {
 
 
 export const locations = {
-   work: WORK_LOCATION,
-   about: ABOUT_LOCATION,
-   resume: RESUME_LOCATION,
+  work: WORK_LOCATION,
+  about: ABOUT_LOCATION,
+  resume: RESUME_LOCATION,
 };
