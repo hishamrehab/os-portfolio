@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from "react";
-import useWindowStore from "../store/window.js";
+import useWindowStore from "../store/window";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Draggable } from "gsap/all";
