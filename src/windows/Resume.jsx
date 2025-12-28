@@ -17,7 +17,7 @@ const Resume = () => {
         <h2 className="flex-1 text-center font-bold text-sm">Resume.pdf</h2>
 
         <a
-          href="/files/resume.pdf"
+          href="/files/Hisham-Rehab.pdf"
           download
           className="cursor-pointer p-1 hover:bg-gray-100 rounded-md transition-colors"
           title="Download Resume"
@@ -27,7 +27,7 @@ const Resume = () => {
       </div>
       <div className="flex-1 overflow-auto bg-gray-100 p-6 flex justify-center items-start">
         <Document
-          file="/files/resume.pdf"
+          file="/files/Hisham-Rehab.pdf"
           loading={<div className="p-10 text-center font-medium text-gray-500">Opening Resume...</div>}
           error={<div className="p-10 text-center text-red-500 font-medium">Unable to load PDF. Please download it instead.</div>}
         >
