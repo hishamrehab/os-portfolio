@@ -22,7 +22,7 @@ const Safari = () => {
   const getPostsPerPage = () => {
     if (windowWidth < 640) return 1;    // Mobile: 1 post
     if (windowWidth < 1024) return 2;   // Tablet: 2 posts
-    return 3;                            // Desktop: 3 posts
+    return 2;                            // Desktop: 3 posts
   };
 
   const postsPerPage = getPostsPerPage();
@@ -53,7 +53,7 @@ const Safari = () => {
       <div id="window-header">
         <WindowControls target="safari" />
 
-        <PanelLeft className="ml-10 icon max-sm:hidden" />
+        {/* <PanelLeft className="ml-10 icon max-sm:hidden" /> */}
 
         <div className="flex items-center gap-1 ml-5 max-sm:ml-3">
           <ChevronLeft

@@ -100,8 +100,16 @@ export const devDocs = [
     link: "https://github.com/hishamrehab/React-Typescript",
   },
 
-  {
+   {
     id: 7,
+    date: "Jun 15, 2026",
+    title: "TypeScript Mastery: From Fundamentals to Advanced Type Safety",
+    image: "/images/typescript.png",
+    link: "https://github.com/hishamrehab/typescript",
+  },
+  
+  {
+    id: 5,
     date: "Apr 10, 2025",
     title: "Tailwind CSS Mastery: Efficient Styling for Modern Web Apps",
     image: "/images/tailwind-guide.png",
@@ -109,7 +117,7 @@ export const devDocs = [
   },
 
   {
-    id: 3,
+    id: 6,
     date: "Aug 15, 2025",
     title: "The Ultimate Guide to Mastering GSAP Animations",
     image: "/images/blog3.png",
@@ -688,8 +696,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };

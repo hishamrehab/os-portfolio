@@ -143,10 +143,10 @@ body {
     }
 
     .blog-post {
-      @apply grid grid-cols-12 gap-3 sm:gap-5 max-sm:gap-2 max-sm:grid-cols-1;
+      @apply grid grid-cols-12 gap-6 sm:gap-5 max-sm:gap-2 max-sm:grid-cols-1 items-center;
 
       img {
-        @apply size-full rounded-md object-cover;
+        @apply size-full  rounded-md object-cover;
       }
 
       .content {
