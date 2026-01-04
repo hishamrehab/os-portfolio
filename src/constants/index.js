@@ -102,12 +102,12 @@ export const devDocs = [
 
    {
     id: 7,
-    date: "Jun 15, 2026",
+    date: "Jun 1, 2026",
     title: "TypeScript Mastery: From Fundamentals to Advanced Type Safety",
     image: "/images/typescript.png",
     link: "https://github.com/hishamrehab/typescript",
   },
-  
+
   {
     id: 5,
     date: "Apr 10, 2025",
