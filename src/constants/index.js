@@ -100,7 +100,7 @@ export const devDocs = [
     link: "https://github.com/hishamrehab/React-Typescript",
   },
 
-   {
+  {
     id: 7,
     date: "Jun 1, 2026",
     title: "TypeScript Mastery: From Fundamentals to Advanced Type Safety",
@@ -274,6 +274,15 @@ const WORK_LOCATION = {
             "- SEO-optimized pages & advanced analytics dashboards",
             "- Smooth animations and modular UI components"
           ]
+        },
+        {
+          id: 1022,
+          name: "onsoftwares.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://software.on-ws.com/",
+          position: "top-20 left-20",
         },
         {
           id: 1068,
@@ -507,7 +516,7 @@ const WORK_LOCATION = {
     // Project 3: Animated Apple iPhone 3D Website
     {
       id: 103,
-      name: "Animated Apple iPhone 3D Website",
+      name: "iPro 3D Showcase",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 right-40",
@@ -654,7 +663,334 @@ const WORK_LOCATION = {
           imageUrl: "/images/sass2.png"
         }
       ]
+    },
+
+    // Project 6: Admin dashboard
+    {
+      id: 106,
+      name: "Admin Dashboard",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-120 left-20",
+      windowPosition: "top-50 left-80",
+      children: [
+        {
+          id: 1061,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Admin Dashboard: A modern, animated admin interface for data management and visualization.",
+            "Features multi-page navigation, responsive design, charts for metrics, and smooth transitions.",
+            "Built as a React-based template with Vite for fast development and deployment.",
+            "Ideal for SaaS admin panels—fully responsive and customizable."
+          ]
+        },
+        {
+          id: 1062,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Multi-page routing (Dashboard, Team, Invoices, Calendar, FAQ)",
+            "- Animated UI elements and transitions",
+            "- Data visualization with charts (e.g., revenue, user stats)",
+            "- Icon-based interfaces for intuitive navigation",
+            "- Responsive layouts for all devices"
+          ]
+        },
+        {
+          id: 1063,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: React, Vite",
+            "- Routing: React Router DOM",
+            "- Styling: Tailwind CSS",
+            "- Animations: Framer Motion",
+            "- Charts: Recharts",
+            "- Icons: Lucide icons",
+            "- Linting: ESLint"
+          ]
+        },
+        {
+          id: 1064,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://admin-dashboard-delta-hazel.vercel.app/",
+          position: "top-35 right-20"
+        },
+        {
+          id: 1065,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/Admin-dashboard",
+          position: "top-45 left-20"
+        },
+        {
+          id: 1066,
+          name: "admin.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/admin1.png"
+        },
+        {
+          id: 1015,
+          name: "admin.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/admin2.png"
+        },
+        {
+          id: 10245,
+          name: "admin.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/admin3.png"
+        },
+
+        {
+          id: 1086,
+          name: "admin.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/admin4.png"
+        },
+        {
+          id: 1070,
+          name: "admin.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/admin5.png"
+        }
+      ]
+    },
+
+    // Project 7 : GPT Horizon
+    {
+      id: 107,
+      name: "GPT Horizon",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-140 right-40",
+      windowPosition: "top-40 right-30",
+      children: [
+        {
+          id: 1071,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "GPT Horizon: An introductory landing page providing an overview of ChatGPT and GPT technologies.",
+            "Designed as an educational demo with sections on GPT basics, applications (chatbots, knowledgebases, education), and a blog for AI insights.",
+            "Built with React for a minimalistic, animated UI—ideal for quick prototyping and showcasing frontend skills.",
+            "Features placeholder content for easy customization; deployed on Vercel for seamless access."
+          ]
+        },
+        {
+          id: 1072,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Introductory sections: 'What is GPT' and 'The possibilities are beyond your imagination'",
+            "- Application highlights: Chatbots, Knowledgebase, Education",
+            "- Motivational content blocks with placeholder text",
+            "- Blog section with article previews and 'Read Full Article' links",
+            "- 'Request Early Access' call-to-action",
+            "- Footer with links, company info, and contact details"
+          ]
+        },
+        {
+          id: 1073,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: React, Create React App",
+            "- Styling: CSS with BEM methodology",
+            "- Design Tools: Angry Tools (gradients), Animista.net (animations)",
+            "- Build/Deploy: npm scripts, Vercel"
+          ]
+        },
+        {
+          id: 1074,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://chat-gpt-overview.vercel.app/",
+          position: "top-35 right-20"
+        },
+        {
+          id: 1075,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/ChatGPT_Overview",
+          position: "top-45 left-20"
+        },
+        {
+          id: 1076,
+          name: "gpt.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/gpt1.png"
+        },
+        {
+          id: 1077,
+          name: "gpt.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/gpt2.png"
+        },
+        {
+          id: 1078,
+          name: "gpt.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/gpt3.png"
+        }
+      ]
+    },
+
+    // Project 9 : Omnifood
+    {
+      id: 108,
+      name: "Omnifood",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-160 left-5",
+      windowPosition: "top-140 left-10",
+      children: [
+        {
+          id: 1081,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Omnifood: A static landing page for a fictional AI-powered food subscription service (FoodieFiesta) delivering personalized, healthy meals daily.",
+            "Emphasizes convenience, nutrition, and sustainability with 365-day coverage, using local/organic ingredients and reusable packaging.",
+            "Built with pure HTML and CSS to demonstrate advanced architecture—semantic markup, responsive design, and modular styling.",
+            "Ideal as a demo for vanilla web development skills; deployed on Vercel for static hosting."
+          ]
+        },
+        {
+          id: 1082,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- 3-step process: Preferences, AI meal plans, flexible delivery",
+            "- Supports various diets (vegetarian, vegan, etc.) with 5,000+ recipes",
+            "- Testimonials and stats (250,000+ meals delivered)",
+            "- Pricing tiers: Starter ($399/mo) and Complete ($649/mo) with free delivery",
+            "- Sustainability focus: No waste, pause/refund options",
+            "- Clean sections for meals, features, and CTAs"
+          ]
+        },
+        {
+          id: 1083,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: HTML5 (semantic elements for structure/accessibility)",
+            "- Styling: CSS3 with advanced architecture (Flexbox/Grid for layouts, BEM methodology, responsive media queries)",
+            "- No JavaScript or frameworks—pure static build",
+            "- Deployment: Vercel for hosting"
+          ]
+        },
+        {
+          id: 1084,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://foodie-fiesta-five.vercel.app/",
+          position: "top-35 right-20"
+        },
+        {
+          id: 1085,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/Omnifood",
+          position: "top-45 left-20"
+        },
+        {
+          id: 1086,
+          name: "omni.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/omni1.png"
+        },
+        {
+          id: 1087,
+          name: "omni.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/omni2.png"
+        },
+        {
+          id: 1088,
+          name: "omni.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/omni3.png"
+        }
+
+      ]
     }
+
+
   ],
 };
 
