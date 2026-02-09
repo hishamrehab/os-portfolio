@@ -367,7 +367,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[30vh] right-[10vw]",
+      windowPosition: "top-[40vh] left-[3vw]",
       children: [
         {
           id: 1011,
@@ -786,7 +786,107 @@ const WORK_LOCATION = {
         }
       ]
     },
-
+    // Project 9 : Ecommerce App
+    {
+      id: 109,
+      name: "Ecommerce App",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-180 right-20",
+      windowPosition: "top-100 right-100",
+      children: [
+        {
+          id: 1091,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "EcomForge: A full-featured e-commerce website built with React, featuring product browsing, cart management, and user authentication.",
+            "Designed as a responsive online store demo with dynamic routing and UI components.",
+            "Integrated with Firebase for auth and data storage; styled with Sass and Bootstrap for a modern look.",
+            "Ideal for showcasing frontend e-commerce development skills; deployed on Firebase."
+          ]
+        },
+        {
+          id: 1092,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Full authentication and authorization (sign-up, login, protected routes)",
+            "- Responsive design with mobile-friendly layouts",
+            "- Product sliders and carousels via Swiper",
+            "- Multi-page routing (home, shop, cart, profile)",
+            "- Interactive UI elements: Add-to-cart, tooltips/popovers, icons",
+            "- Firebase integration for real-time data and hosting"
+          ]
+        },
+        {
+          id: 1093,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: React JS, Vite",
+            "- Styling: Sass (SCSS), Bootstrap, React-Bootstrap",
+            "- Routing: React Router DOM",
+            "- UI/Interactivity: Swiper, PopperJS, Icofont",
+            "- Backend/Deployment: Firebase (auth, database, hosting)"
+          ]
+        },
+        {
+          id: 1094,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://full-ecommerce-website.web.app/",
+          position: "top-35 right-20"
+        },
+        {
+          id: 1095,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/Ecommerce",
+          position: "top-45 left-20"
+        },
+        {
+          id: 1096,
+          name: "ecom.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/ecom1.png"
+        },
+        {
+          id: 1097,
+          name: "ecom.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/ecom2.png"
+        },
+        {
+          id: 1098,
+          name: "ecom.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/ecom3.png"
+        }
+      ]
+    },
     // Project 7 : GPT Horizon
     {
       id: 107,
@@ -988,8 +1088,7 @@ const WORK_LOCATION = {
         }
 
       ]
-    }
-
+    },
 
   ],
 };
