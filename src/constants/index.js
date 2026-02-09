@@ -1093,6 +1093,11 @@ const WORK_LOCATION = {
   ],
 };
 
+
+
+
+
+
 const ABOUT_LOCATION = {
   id: 2,
   type: "about",
@@ -1107,12 +1112,12 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
+      subtitle: "Front-End Developer",
       description: [
-        "Hey! I’m Hisham 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hisham — Front-end developer with 2+ years building scalable, high-performance web applications.",
+        "Specialized in: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Git.",
+        "Delivered almost 10 large-scale projects (DATA C and freelance projects): responsive apps, REST/GraphQL integrations, GSAP/Framer Motion/Three.js animations, and performance optimizations (up to 50% faster loads via React Query, lazy loading, Vite).",
+        "Focus: clean, maintainable code, intuitive UX, responsive design, and production-ready scalability.",
       ],
     },
   ],
