@@ -1114,10 +1114,10 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Front-End Developer",
       description: [
-        "Hisham — Front-end developer with 2+ years building scalable, high-performance web applications.",
-        "Specialized in: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Git.",
-        "Delivered almost 10 large-scale projects (DATA C and freelance projects): responsive apps, REST/GraphQL integrations, GSAP/Framer Motion/Three.js animations, and performance optimizations (up to 50% faster loads via React Query, lazy loading, Vite).",
-        "Focus: clean, maintainable code, intuitive UX, responsive design, and production-ready scalability.",
+        "I'm Hisham Rehab — a front-end developer with over 2 years of experience crafting scalable, high-performance web applications.",
+        "Core expertise: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Git.",
+        "Delivered nearly 10 large-scale projects (at DATA C and freelance projects): responsive UIs, REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, Vite).",
+        "Priorities: clean & maintainable code, intuitive user experience, fully responsive design, and production-grade scalability."
       ],
     },
   ],
