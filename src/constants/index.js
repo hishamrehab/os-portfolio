@@ -1089,11 +1089,113 @@ const WORK_LOCATION = {
 
       ]
     },
+    // New Project: Agency AI Platform
+    {
+      id: 110,
+      name: "Agency AI Platform",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-200 left-40",
+      windowPosition: "top-20 left-120",
+      children: [
+        {
+          id: 1101,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Agency AI Platform: A React-based landing page for a digital agency focused on transforming ideas into interactive digital experiences.",
+            "Showcases services in advertising, content marketing, social media; recent work, team introductions, and contact forms.",
+            "Built with Vite for fast development, Tailwind CSS for styling, and Framer Motion for animations.",
+            "Demonstrates a professional agency portfolio with a straightforward, responsive design—deployed on Vercel."
+          ]
+        },
+        {
+          id: 1107,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Trusted by 10k+ people and leading companies",
+            "- Services: Advertising, Content Marketing, Content Writing, Social Media",
+            "- Latest Work: Mobile App Marketing, Dashboard Management, Fitness App Promotion",
+            "- Team: Introductions to CEO, Ads Manager, Content Marketer, etc.",
+            "- Contact form and newsletter subscription",
+            "- Fast HMR with Vite, code quality with ESLint"
+          ]
+        },
+        {
+          id: 1108,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React JS, Vite",
+            "- Styling: Tailwind CSS",
+            "- Animations: Framer Motion",
+            "- Linting: ESLint",
+            "- Languages: JavaScript, CSS, HTML"
+          ]
+        },
+        {
+          id: 1102,
+          name: "agency-ai-platform.vercel.app",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://agency-ai-platform.vercel.app/",
+          position: "top-35 right-20"
+        },
+        {
+          id: 1103,
+          name: "github.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/agency-ai-platform",
+          position: "top-45 left-20"
+        },
 
+
+        {
+          id: 1080,
+          name: "agency.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/agency1.png"
+        }
+        ,
+
+        {
+          id: 1081,
+          name: "agency.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/agency2.png"
+        },
+        {
+          id: 1082,
+          name: "agency.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/agency3.png"
+        }
+      ]
+    }
   ],
 };
-
-
 
 
 
