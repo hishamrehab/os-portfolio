@@ -1090,110 +1090,112 @@ const WORK_LOCATION = {
       ]
     },
     // New Project: Agency AI Platform
+  // ... previous folders remain unchanged ...
+
+// Replaced old Agency AI Platform with the enterprise-grade NexusForge
+{
+  id: 110,
+  name: "NexusForge AI Platform",
+  icon: "/images/folder.png",
+  kind: "folder",
+  position: "top-200 left-40",           // kept similar position
+  windowPosition: "top-20 left-120",
+  children: [
     {
-      id: 110,
-      name: "Agency AI Platform",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-200 left-40",
-      windowPosition: "top-20 left-120",
-      children: [
-        {
-          id: 1101,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "Agency AI Platform: A React-based landing page for a digital agency focused on transforming ideas into interactive digital experiences.",
-            "Showcases services in advertising, content marketing, social media; recent work, team introductions, and contact forms.",
-            "Built with Vite for fast development, Tailwind CSS for styling, and Framer Motion for animations.",
-            "Demonstrates a professional agency portfolio with a straightforward, responsive design—deployed on Vercel."
-          ]
-        },
-        {
-          id: 1107,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Trusted by 10k+ people and leading companies",
-            "- Services: Advertising, Content Marketing, Content Writing, Social Media",
-            "- Latest Work: Mobile App Marketing, Dashboard Management, Fitness App Promotion",
-            "- Team: Introductions to CEO, Ads Manager, Content Marketer, etc.",
-            "- Contact form and newsletter subscription",
-            "- Fast HMR with Vite, code quality with ESLint"
-          ]
-        },
-        {
-          id: 1108,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React JS, Vite",
-            "- Styling: Tailwind CSS",
-            "- Animations: Framer Motion",
-            "- Linting: ESLint",
-            "- Languages: JavaScript, CSS, HTML"
-          ]
-        },
-        {
-          id: 1102,
-          name: "agency-ai-platform.vercel.app",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://agency-ai-platform.vercel.app/",
-          position: "top-35 right-20"
-        },
-        {
-          id: 1103,
-          name: "github.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/agency-ai-platform",
-          position: "top-45 left-20"
-        },
-
-
-        {
-          id: 1080,
-          name: "agency.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/agency1.png"
-        }
-        ,
-
-        {
-          id: 1081,
-          name: "agency.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/agency2.png"
-        },
-        {
-          id: 1082,
-          name: "agency.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/agency3.png"
-        }
+      id: 1101,
+      name: "Project Overview.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-5 left-10",
+      description: [
+        "NexusForge: Enterprise-grade SaaS orchestration platform built for elite technical agencies.",
+        "Serves as a 'Technical Marketplace' + 'Blueprinting Engine' demonstrating production-level architecture.",
+        "Showcases: Documentation hub with SOC2/GDPR/E2EE specs, AI RAG framework, interactive team profiles with case-study linking,",
+        "deep-technical blog (2026 SaaS trends), interactive pricing matrix (Lite/Growth/Enterprise), and functional AI-simulated dashboard.",
+        "Emphasizes scalability, security, clean code, and product-led growth — positioned as multi-million dollar infrastructure ready.",
+        "Live: https://nextusforge-enterprise-ai-platform.vercel.app/"
       ]
+    },
+    {
+      id: 1102,
+      name: "Live Demo.url",
+      icon: "/images/safari.png",
+      kind: "file",
+      fileType: "url",
+      href: "https://nextusforge-enterprise-ai-platform.vercel.app/",
+      position: "top-15 left-20"
+    },
+    {
+      id: 1103,
+      name: "GitHub Repository.url",
+      icon: "/images/safari.png",
+      kind: "file",
+      fileType: "url",
+      href: "https://github.com/hishamrehab/Nextusforge-Ai-Platform",
+      position: "top-25 left-35"
+    },
+    {
+      id: 1104,
+      name: "Tech Stack & Architecture.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-35 left-50",
+      description: [
+        "Frontend: React , Tailwind CSS, Framer Motion, Lucide icons",
+        "State: React Context API + persistent localStorage",
+        "Architecture: Full code-splitting, lazy-loading, decoupled data (nexusData.js / docsData.js), zero visual debt atomic design",
+        "Performance: Route-based splitting, responsive from iPhone SE → 4K, high Lighthouse potential",
+        "Enterprise mindset: SOC2 Type II / GDPR / E2EE references, 99.99% SLA simulation, AI-native (RAG / LLM orchestration docs)"
+      ]
+    },
+    {
+      id: 1105,
+      name: "Key Sections.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-50 left-25",
+      description: [
+        "• Blueprinting Hub — deep docs (Nexus Stack, security, AI RAG)",
+        "• Team Marketplace — pro profiles + linked case studies + social grid",
+        "• Knowledge Hub (Forge Blog) — filtered technical articles, Framer Motion UX",
+        "• Pricing & Scaling Analytics — interactive tiers + trust badges + CTAs",
+        "• Content Forge Dashboard — simulated LLM content gen + history + UX polish"
+      ]
+    },
+
+    // Add screenshot placeholders — replace imageUrl with your actual screenshot paths when available
+    {
+      id: 1106,
+      name: "nexusforge-home.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-65 right-60",
+      imageUrl: "/images/nexusforge-home.png"   // homepage / hero + nav
+    },
+    {
+      id: 1107,
+      name: "nexusforge-docs.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-80 right-75",
+      imageUrl: "/images/nexusforge-docs.png"   // docs / blueprinting hub
+    },
+    {
+      id: 1108,
+      name: "nexusforge-pricing.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-95 right-50",
+      imageUrl: "/images/nexusforge-pricing.png" // pricing comparison
     }
+  ]
+},
   ],
 };
 

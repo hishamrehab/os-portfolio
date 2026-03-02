@@ -66,7 +66,7 @@ const Safari = () => {
           />
         </div>
 
-    
+
       </div>
 
       <div className="blog">
