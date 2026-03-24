@@ -1299,7 +1299,7 @@ const WORK_LOCATION = {
 
      {
       id: 111,
-      name: "YouTube Clone",
+      name: "YouTube",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-220 left-60",
