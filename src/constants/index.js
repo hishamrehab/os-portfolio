@@ -300,8 +300,67 @@ const WORK_LOCATION = {
             "- Other: React Toastify, SweetAlert2, Lodash, Date-fns",
             "- Build: Vite, Docker for containerization"
           ]
-        }
-      ]
+        },
+      
+        {
+          id: 1024,
+          name: "storage.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/onsoftwares1.png",
+        },
+        {
+          id: 1025,
+          name: "storage.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/onsoftwares2.png",
+        },
+
+        {
+          id: 1026,
+          name: "storage.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/onsoftwares7.png",
+        },
+
+   {
+          id: 1027,
+          name: "storage.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/onsoftwares4.png",
+        },
+
+  {
+          id: 1028,
+          name: "storage.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/onsoftwares6.png",
+        },
+
+
+
+
+
+
+
+        
+      ],
+
+      
     },
     // Project: NVESTIA (Private Client)
     {
@@ -706,7 +765,6 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/sass3.png"
         },
-
       ]
     },
     // Project 6: Admin dashboard
@@ -1133,10 +1191,7 @@ const WORK_LOCATION = {
 
       ]
     },
-    // New Project: Agency AI Platform
-    // ... previous folders remain unchanged ...
-
-    // Replaced old Agency AI Platform with the enterprise-grade NexusForge
+    //  Project 10 : Agency AI Platform
     {
       id: 110,
       name: "NexusForge AI Platform",
@@ -1240,6 +1295,121 @@ const WORK_LOCATION = {
         }
       ]
     },
+    // Project 11 : YouTube Clone
+
+     {
+      id: 111,
+      name: "YouTube Clone",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-220 left-60",
+      windowPosition: "top-80 left-70",
+      children: [
+        {
+          id: 11101,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "YouTube Clone: A fully functional video streaming platform built as a pixel-perfect frontend replica of YouTube.",
+            "Features include: Video search & recommendations, responsive video player with React Player, sidebar navigation, dark mode, video grid with thumbnails, channel views, and real-time data handling.",
+            "Integrated Firebase for authentication, database, and storage. Supports video upload, playback, and user interactions.",
+            "Modern React application showcasing clean component architecture, state management, and API integration."
+          ]
+        },
+        {
+          id: 11102,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Advanced video search and filtering",
+            "- Fully responsive video player (React Player)",
+            "- Sidebar with categories and subscriptions",
+            "- Dark/light mode toggle",
+            "- Firebase Authentication & Firestore integration",
+            "- Video upload and metadata management",
+            "- Thumbnail grid with hover effects and metadata"
+          ]
+        },
+        {
+          id: 11103,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React 18, React Router DOM",
+            "- UI: Material-UI (@mui/material + icons), Styled Components + Emotion",
+            "- Video: react-player",
+            "- Backend/Services: Firebase (Auth, Firestore, Storage)",
+            "- HTTP: Axios",
+            "- Build: Create React App"
+          ]
+        },
+        {
+          id: 11104,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://you-tube-lemon-five.vercel.app/",
+          position: "top-35 left-20"
+        },
+        {
+          id: 11105,
+          name: "GitHub Repository.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/YouTube",
+          position: "top-45 left-35"
+        },
+        // Add your actual screenshots here when ready (replace imageUrl paths)
+        {
+          id: 11106,
+          name: "youtube-home.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 right-70",
+          imageUrl: "/images/youtube1.png"
+        },
+        {
+          id: 11107,
+          name: "youtube-player.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-80 right-80",
+          imageUrl: "/images/youtube2.png"
+        },
+        {
+          id: 11108,
+          name: "youtube-search.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-95 right-60",
+          imageUrl: "/images/youtube3.png"
+        },
+         {
+          id: 11109,
+          name: "youtube-search.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-95 right-60",
+          imageUrl: "/images/youtube4.png"
+        }
+      ]
+    },
+
   ],
 };
 
