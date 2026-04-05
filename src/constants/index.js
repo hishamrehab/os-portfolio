@@ -242,7 +242,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-20 right-10",
-      windowPosition: "top-10 left-10",
+      windowPosition: "top-[5vh] left-[2vw]",
       children: [
         {
           id: 1061,
@@ -341,7 +341,7 @@ const WORK_LOCATION = {
           imageUrl: "/images/onsoftwares4.png",
         },
 
-  {
+     {
           id: 1028,
           name: "storage.png",
           icon: "/images/image.png",
@@ -349,27 +349,19 @@ const WORK_LOCATION = {
           fileType: "img",
           position: "top-52 left-80",
           imageUrl: "/images/onsoftwares6.png",
-        },
-
-
-
-
-
-
-
-        
+        }
       ],
 
       
     },
-    // Project: NVESTIA (Private Client)
+    // Project 2: NVESTIA (Private Client)
     {
       id: 1010,  // Or next available
       name: "NVESTIA",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-80 left-60",  // Adjust as needed
-      windowPosition: "top-50 left-10",
+      position: "top-80 left-60",  
+      windowPosition: "top-[20vh] left-[2vw]",
       children: [
         {
           id: 1061,
@@ -408,7 +400,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-25 left-40",
           description: [
-            "- Frontend: React 19, Vite, Redux Toolkit, Tailwind CSS, Framer Motion",
+            "- Frontend: React , Redux Toolkit, Tailwind CSS, Framer Motion",
             "- Forms: React Hook Form + Yup",
             "- Backend: Directus (@directus/sdk), PostgreSQL",
             "- AI: Google Generative AI, OpenAI",
@@ -416,10 +408,9 @@ const WORK_LOCATION = {
             "- Private repos (nvestia-frontend & Directus instance)"
           ]
         }
-        // Optional anonymized screenshots can be added here if available
       ]
     },
-    // Project 1: FILMPIRE
+    // Project 3: FILMPIRE
     {
       id: 101,
       name: "FILMPIRE",
@@ -462,9 +453,6 @@ const WORK_LOCATION = {
           href: "https://github.com/hishamrehab/Movies-Website",
           position: "top-20 left-20",
         },
-
-
-
         {
           id: 1014,
           name: "filmpire.png",
@@ -474,8 +462,6 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/filmpire1.png",
         },
-
-
         {
           id: 1015,
           name: "filmpire.png",
@@ -495,19 +481,17 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/filmpire3.png",
         },
-
-
       ],
     },
 
-    // Project 2: Storage Management System
+    // Project 4: Storage Management System
     {
       id: 102,
       name: "Storage Management System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 left-80",
-      windowPosition: "top-[50vh] left-[15vw]",
+      windowPosition: "top-[50vh] left-[14vw]",
       children: [
         {
           id: 1021,
@@ -572,14 +556,14 @@ const WORK_LOCATION = {
       ],
     },
 
-    // Project 3: Animated Apple iPhone 3D Website
+    // Project 5: Animated Apple iPhone 3D Website
     {
       id: 103,
-      name: "iPro 3D Showcase",
+      name: "iPro 3D ",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 right-40",
-      windowPosition: "top-[15vh] right-[25vw]",
+      windowPosition: "top-[25vh] right-[25vw]",
       children: [
         {
           id: 1031,
@@ -631,8 +615,6 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/iphone2.png",
         },
-
-
         {
           id: 1036,
           name: "iphone.png",
@@ -642,19 +624,17 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/iphone3.png",
         },
-
       ],
     },
 
-
-    //  5: Xora AI - Enterprise SaaS Platform
+    // Project 6: Xora AI - Enterprise SaaS Platform
     {
       id: 105,
       name: "Xora AI - Enterprise SaaS Platform",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-100 right-60",
-      windowPosition: "top-[5vh] left-[15vw]",
+      windowPosition: "top-[10vh] right-[50vw]",
       children: [
         {
           id: 10501,
@@ -696,8 +676,8 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-25 left-40",
           description: [
-            "- Core: React 18, Vite",
-            "- Routing: React Router v6",
+            "- Core: React",
+            "- Routing: React Router",
             "- Styling: Tailwind CSS with custom design system (Glassmorphism, HSL color palettes)",
             "- Animations: Framer Motion",
             "- Icons: Lucide React",
@@ -723,9 +703,6 @@ const WORK_LOCATION = {
           href: "https://github.com/hishamrehab/Xora-AI-Enterprise-SaaS-Platform",
           position: "top-20 right-20"
         },
-        // Screenshots (placeholders)
-
-
         {
           id: 10506,
           name: "Screenshots.png",
@@ -774,7 +751,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-120 left-20",
-      windowPosition: "top-50 left-80",
+      windowPosition: "top-[27vh] left-[20vw]",
       children: [
         {
           id: 1061,
@@ -813,7 +790,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-25 left-40",
           description: [
-            "- Core: React, Vite",
+            "- Core: React",
             "- Routing: React Router DOM",
             "- Styling: Tailwind CSS",
             "- Animations: Framer Motion",
@@ -888,14 +865,14 @@ const WORK_LOCATION = {
         }
       ]
     },
-    // Project 9 : Ecommerce App
+    // Project 7 : Ecommerce App
     {
       id: 109,
       name: "Ecommerce App",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-180 right-20",
-      windowPosition: "top-100 right-100",
+      windowPosition: "top-[40vh] right-[25vw]",
       children: [
         {
           id: 1091,
@@ -903,7 +880,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-[10vh] right-[50vw]",
           description: [
             "EcomForge: A full-featured e-commerce website built with React, featuring product browsing, cart management, and user authentication.",
             "Designed as a responsive online store demo with dynamic routing and UI components.",
@@ -935,7 +912,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-25 left-40",
           description: [
-            "- Core: React JS, Vite",
+            "- Core: React",
             "- Styling: Sass (SCSS), Bootstrap, React-Bootstrap",
             "- Routing: React Router DOM",
             "- UI/Interactivity: Swiper, PopperJS, Icofont",
@@ -989,14 +966,14 @@ const WORK_LOCATION = {
         }
       ]
     },
-    // Project 7 : GPT Horizon
+    // Project 8 : GPT Horizon
     {
       id: 107,
       name: "GPT Horizon",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-140 right-40",
-      windowPosition: "top-40 right-30",
+      windowPosition: "top-[20vh] right-[10vw]",
       children: [
         {
           id: 1071,
@@ -1097,7 +1074,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-160 left-5",
-      windowPosition: "top-140 left-10",
+      windowPosition: "top-[55vh] left-[3vw]",
       children: [
         {
           id: 1081,
@@ -1191,13 +1168,13 @@ const WORK_LOCATION = {
 
       ]
     },
-    //  Project 10 : Agency AI Platform
+    //  Project 10 : Agency AI 
     {
       id: 110,
-      name: "NexusForge AI Platform",
+      name: "Agency AI ",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-200 left-40",           // kept similar position
+      position: "top-200 left-40",         
       windowPosition: "top-20 left-120",
       children: [
         {
@@ -1208,7 +1185,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "NexusForge: Enterprise-grade SaaS orchestration platform built for elite technical agencies.",
+            "Agency AI: Enterprise-grade SaaS orchestration platform built for elite technical agencies.",
             "Serves as a 'Technical Marketplace' + 'Blueprinting Engine' demonstrating production-level architecture.",
             "Showcases: Documentation hub with SOC2/GDPR/E2EE specs, AI RAG framework, interactive team profiles with case-study linking,",
             "deep-technical blog (2026 SaaS trends), interactive pricing matrix (Lite/Growth/Enterprise), and functional AI-simulated dashboard.",
@@ -1295,15 +1272,14 @@ const WORK_LOCATION = {
         }
       ]
     },
-    // Project 11 : YouTube Clone
-
+    // Project 11 : YouTube 
      {
       id: 111,
       name: "YouTube",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-220 left-60",
-      windowPosition: "top-80 left-70",
+      windowPosition: "top-[30vh] left-[12vw]",
       children: [
         {
           id: 11101,
@@ -1370,7 +1346,6 @@ const WORK_LOCATION = {
           href: "https://github.com/hishamrehab/YouTube",
           position: "top-45 left-35"
         },
-        // Add your actual screenshots here when ready (replace imageUrl paths)
         {
           id: 11106,
           name: "youtube-home.png",
@@ -1409,7 +1384,108 @@ const WORK_LOCATION = {
         }
       ]
     },
-
+    // Project 12 : Austin Luxury Realty
+    {
+      id: 112,
+      name: "Austin Luxury Realty",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-[60vh] left-[40vw]",
+      windowPosition: "top-[10vh] left-[10vw]",
+      children: [
+        {
+          id: 11201,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Austin Luxury Realty: A marketing-style luxury real estate site for Austin, Texas—listings, neighborhoods, agents, sell flow, about, and contact.",
+            "Rich listing catalog with filters/sort, paginated results, and detail pages with galleries and related properties.",
+            "Neighborhood guides with grid, detail routes, comparison and map-style sections; static TypeScript data with curated imagery.",
+            "Fully responsive layout with sage/charcoal theming, motion on sections, and polished header/footer navigation.",
+          ],
+        },
+        {
+          id: 11202,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Saved properties & neighborhoods via React context + localStorage (`/saved-properties`, `/saved-neighborhoods`)",
+            "- Listings: filters, sort, show-more loading, property detail with gallery",
+            "- Neighborhoods: filterable grid, per-neighborhood detail, lifestyle/spotlight sections",
+            "- Agents directory: search/filter and contact dialog (Radix)",
+            "- Sell page: services, process, advisors, valuation-style flows",
+            "- Global UX: scroll-to-top on route change, floating back-to-top, theme toggle (light/dark)",
+          ],
+        },
+        {
+          id: 11203,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: React, TypeScript",
+            "- Routing: React Router",
+            "- Styling: Tailwind CSS , custom theme tokens, CVA + clsx + tailwind-merge",
+            "- UI: Radix UI primitives, Lucide React, Motion, Geist variable font, reactjs-popup",
+            "- Data: static TS modules (listings, neighborhoods, agents, contact, etc.); listing images via Unsplash URLs where noted",
+            "- Tooling: ESLint, TypeScript ESLint",
+          ],
+        },
+        {
+          id: 11204,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://austin-luxury-real-estate.vercel.app/",
+          position: "top-35 left-20",
+        },
+        {
+          id: 11205,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/Austin-Luxury-Real-Estate",
+          position: "top-45 right-20",
+        },
+        {
+          id: 11206,
+          name: "austin-luxury-1.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/austin-luxury-1.png",
+        },
+        {
+          id: 11207,
+          name: "austin-luxury-2.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/austin-luxury-2.png",
+        },
+        {
+          id: 11208,
+          name: "austin-luxury-3.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/austin-luxury-3.png",
+        },
+      ],
+    },
   ],
 };
 
