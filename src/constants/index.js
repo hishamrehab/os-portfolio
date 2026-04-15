@@ -1486,6 +1486,108 @@ const WORK_LOCATION = {
         },
       ],
     },
+    // Project 13 : TechInsight
+    {
+      id: 113,
+      name: "TechInsight",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-[80vh] right-[8vw]",
+      windowPosition: "top-[12vh] left-[20vw]",
+      children: [
+        {
+          id: 11301,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TechInsight: A frontend technology content platform built with React, TypeScript, and Vite for curated learning and discovery.",
+            "Features category-driven browsing, article search/filtering, article and category detail pages, and a polished multi-page UX.",
+            "Includes a dedicated Generation page for focused learning tracks and an onboarding flow to personalize content interests.",
+            "Implements client-side authentication context with protected-route support for demo user flows."
+          ]
+        },
+        {
+          id: 11302,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Curated tech articles with category filters and search",
+            "- Category and article detail pages with related content",
+            "- Multi-page routing (Home, Articles, Categories, About, Generation, Get Started)",
+            "- Demo auth context + protected route support",
+            "- Responsive UI with reusable layouts/components",
+            "- Fast Vite-based development and production build workflow"
+          ]
+        },
+        {
+          id: 11303,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Core: React 19, TypeScript",
+            "- Build Tooling: Vite",
+            "- Routing: React Router DOM",
+            "- Styling: Tailwind CSS v4 + SCSS",
+            "- Quality: ESLint + TypeScript checks",
+            "- Architecture: Component-driven pages with local content data modules"
+          ]
+        },
+        {
+          id: 11304,
+          name: "Live Demo.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://your-techinsight-demo-url.com",
+          position: "top-35 left-20"
+        },
+        {
+          id: 11305,
+          name: "Source Code.url",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/hishamrehab/TechInsight",
+          position: "top-45 right-20"
+        },
+        {
+          id: 11306,
+          name: "techinsight-1.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-55 right-80",
+          imageUrl: "/images/techinsight1.png"
+        },
+        {
+          id: 11307,
+          name: "techinsight-2.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-65 left-80",
+          imageUrl: "/images/techinsight2.png"
+        },
+        {
+          id: 11308,
+          name: "techinsight-3.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-75 right-80",
+          imageUrl: "/images/techinsight3.png"
+        }
+      ]
+    }
   ],
 };
 
