@@ -1547,7 +1547,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://your-techinsight-demo-url.com",
+          href: "https://tech-insight-two.vercel.app/",
           position: "top-35 left-20"
         },
         {
