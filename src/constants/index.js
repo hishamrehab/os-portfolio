@@ -5,6 +5,11 @@ export const navLinks = [
     type: "finder",
   },
   {
+    id: 2,
+    name: "Experience",
+    type: "experience",
+  },
+  {
     id: 3,
     name: "Contact",
     type: "contact",
@@ -52,6 +57,12 @@ export const dockApps = [
   },
 
   {
+    id: "experience",
+    name: "Experience",
+    icon: "experience.svg",
+    canOpen: true,
+  },
+  {
     id: "contact",
     name: "Contact", // or "Get in touch"
     icon: "contact.png",
@@ -63,6 +74,48 @@ export const dockApps = [
     icon: "terminal.png",
     canOpen: true,
   }
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    company: "Secured Smart Systems",
+    role: "Front-End Developer",
+    period: "02/2026 – Present",
+    highlights: [
+      "Built and delivered enterprise-grade admin portals for large-scale clients, including TMG (Talaat Moustafa Group), using React, TypeScript, Redux Toolkit, Fluent UI, and REST APIs.",
+      "Led the development of a comprehensive Membership Admin Portal, enabling end-to-end membership lifecycle management, including registration, activation, suspension, renewal, and expiration workflows.",
+      "Developed key business modules including member management dashboards, General Assembly attendance and absentee tracking, waiting lists, and quick registration workflows.",
+      "Integrated OIDC-based authentication and authorization and consumed backend services through an enterprise Admin Gateway architecture.",
+      "Implemented Arabic/English localization (i18next) with full RTL/LTR support, delivering a seamless multilingual user experience.",
+      "Built reusable UI components and design-system-driven interfaces using Fluent UI and @3s/components, improving consistency and development efficiency.",
+      "Delivered reporting and export functionality including PDF and Excel exports to support operational and administrative workflows.",
+    ],
+  },
+  {
+    id: 2,
+    company: "DATA C",
+    role: "Front-End Developer",
+    period: "01/2025 – 02/2026",
+    highlights: [
+      "Designed and delivered CMS-driven applications from scratch using React, Next.js, TypeScript, Tailwind CSS, and Directus CMS, integrating REST and GraphQL APIs.",
+      "Developed highly responsive user interfaces with advanced animations and interactive experiences using GSAP, Framer Motion, and Three.js.",
+      "Optimized application performance through React Query caching, lazy loading, code splitting, memoization, and asset optimization, achieving up to 50% faster page load times.",
+      "Collaborated with UX/UI designers, backend engineers, and stakeholders in Agile teams to deliver scalable, production-ready solutions.",
+      "Implemented reusable components, clean architecture patterns, and maintainable codebases to improve development velocity and long-term scalability.",
+    ],
+  },
+  {
+    id: 3,
+    company: "Freelance",
+    role: "Front-End Developer",
+    period: "01/2024 – 01/2025",
+    highlights: [
+      "Built responsive and performant web applications using React.js, Next.js, TypeScript, and modern frontend tooling.",
+      "Delivered custom client solutions with a focus on scalability, accessibility, and user experience.",
+      "Created and maintained 20+ GitHub projects demonstrating expertise in React, Next.js, TypeScript, Tailwind CSS, and frontend best practices.",
+    ],
+  },
 ];
 
 
@@ -134,6 +187,7 @@ export const INITIAL_Z_INDEX = 1000;
 
 export const WINDOW_CONFIG = {
   finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  experience: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
@@ -410,7 +464,67 @@ const WORK_LOCATION = {
         }
       ]
     },
-    // Project 3: FILMPIRE
+    // Project 3: TMG Membership Admin Portal (Enterprise Client)
+    {
+      id: 114,
+      name: "TMG Membership Admin Portal",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-[15vh] left-[8vw]",
+      children: [
+        {
+          id: 11401,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TMG Membership Admin Portal: Enterprise membership management platform for TMG (Talaat Moustafa Group), supporting the full member lifecycle from registration to renewal and expiry.",
+            "Built key modules including a multi-step registration wizard, member management dashboards, waiting lists, quick registration, and General Assembly tracking.",
+            "Integrated OIDC authentication, REST APIs, and enterprise gateway services for a secure and scalable architecture.",
+            "Delivered Arabic/English localization (i18next) with RTL/LTR support and PDF/Excel export functionality.",
+            "Confidential enterprise client project—internal admin portal for TMG membership operations."
+          ]
+        },
+        {
+          id: 11402,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Full member lifecycle: registration, renewal, and expiry management",
+            "- Multi-step registration wizard and quick registration flows",
+            "- Member management dashboards and waiting list workflows",
+            "- General Assembly tracking module",
+            "- OIDC authentication with REST APIs and enterprise gateway integration",
+            "- Arabic/English localization (i18next) with RTL/LTR layout support",
+            "- PDF and Excel export for reporting and operational workflows",
+            "- Reusable Fluent UI components and design-system-driven interfaces"
+          ]
+        },
+        {
+          id: 11403,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript, Redux Toolkit, Fluent UI",
+            "- Auth: OIDC authentication",
+            "- APIs: REST APIs, enterprise gateway services",
+            "- i18n: i18next with Arabic/English RTL/LTR support",
+            "- Export: PDF and Excel export functionality",
+            "- Architecture: Reusable component library and design-system-driven UI"
+          ]
+        }
+      ]
+    },
+    // Project 4: FILMPIRE
     {
       id: 101,
       name: "FILMPIRE",

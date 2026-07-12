@@ -1,0 +1,14 @@
+<svg width="141" height="141" viewBox="0 0 141 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="18" width="105" height="105" rx="24" fill="url(#experience-gradient)"/>
+  <path d="M48 58C48 54.134 51.134 51 55 51H61V47.5C61 45.567 62.567 44 64.5 44H76.5C78.433 44 80 45.567 80 47.5V51H86C89.866 51 93 54.134 93 58V88C93 91.866 89.866 95 86 95H55C51.134 95 48 91.866 48 88V58Z" fill="white" fill-opacity="0.96"/>
+  <path d="M64.5 51H76.5V57H64.5V51Z" fill="#1D4ED8"/>
+  <rect x="54" y="63" width="33" height="4.5" rx="2.25" fill="#1D4ED8" fill-opacity="0.22"/>
+  <rect x="54" y="71.5" width="24" height="4.5" rx="2.25" fill="#1D4ED8" fill-opacity="0.16"/>
+  <rect x="54" y="80" width="28" height="4.5" rx="2.25" fill="#1D4ED8" fill-opacity="0.16"/>
+  <defs>
+    <linearGradient id="experience-gradient" x1="28" y1="24" x2="113" y2="117" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+</svg>

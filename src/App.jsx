@@ -1,7 +1,7 @@
 import { Navbar , Welcome , Dock, Home } from "./components"
 // import gsap from "gsap" // Commented out since not used
 // import { Draggable }from "gsap/Draggable" // Commented out to fix Vercel build issue
-import { Finder, Resume, Safari, Terminal , Text , Image, Contact} from "./windows"
+import { Finder, Resume, Safari, Terminal, Text, Image, Contact, Experience } from "./windows"
 
 // gsap.registerPlugin(Draggable) // Commented out to fix Vercel build issue
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
 
     <Terminal />
     <Safari />
+    <Experience />
     <Resume />
     <Finder />
     <Text />

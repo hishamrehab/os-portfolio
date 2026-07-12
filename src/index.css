@@ -93,10 +93,10 @@ body {
   }
 
   .dock-icon {
-    @apply size-14 3xl:size-20 cursor-pointer;
+    @apply size-14 3xl:size-20 cursor-pointer flex items-center justify-center;
 
     img {
-      @apply object-cover object-center;
+      @apply size-full object-contain object-center;
     }
   }
 }
@@ -427,6 +427,218 @@ body {
 }
 
 
+
+#experience {
+  @apply w-[95%] max-w-4xl absolute top-24 left-1/2 -translate-x-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+
+  h2 {
+    @apply font-bold text-sm text-center w-full;
+  }
+
+  .experience-content {
+    @apply max-h-[72vh] overflow-y-auto p-4 sm:p-6 font-roboto text-sm bg-linear-to-b from-slate-50 to-white;
+
+    .experience-hero {
+      @apply grid gap-4 sm:grid-cols-[auto_1fr_auto] items-center p-4 sm:p-5 rounded-2xl border border-blue-100 bg-white shadow-sm mb-4;
+
+      .experience-hero-icon {
+        @apply size-12 rounded-2xl bg-linear-to-br from-blue-500 to-blue-700 text-white flex-center shadow-md;
+      }
+
+      .experience-hero-copy {
+        @apply space-y-1;
+
+        .experience-hero-label {
+          @apply text-[11px] uppercase tracking-[0.2em] text-blue-600 font-semibold;
+        }
+
+        h3 {
+          @apply text-lg sm:text-xl font-bold text-gray-900;
+        }
+
+        p {
+          @apply text-gray-600 leading-relaxed;
+
+          strong {
+            @apply text-gray-800;
+          }
+        }
+      }
+
+      .experience-hero-stats {
+        @apply grid grid-cols-3 gap-2 sm:gap-3;
+
+        div {
+          @apply rounded-xl bg-slate-50 border border-slate-100 px-3 py-2 text-center min-w-[4.5rem];
+
+          span {
+            @apply block text-base sm:text-lg font-bold text-gray-900;
+          }
+
+          p {
+            @apply text-[10px] uppercase tracking-wide text-gray-500;
+          }
+        }
+      }
+    }
+
+    .experience-current {
+      @apply flex items-center gap-2.5 mb-5 px-3 py-2 rounded-full bg-emerald-50 border border-emerald-100 w-fit text-emerald-800 text-xs font-medium;
+
+      .experience-pulse {
+        @apply size-2 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,0.15)];
+      }
+    }
+
+    .experience-timeline {
+      @apply space-y-5 sm:space-y-6 ps-1;
+
+      .experience-item {
+        @apply grid grid-cols-[2.75rem_1fr] gap-3 sm:gap-4 relative;
+
+        &:not(:last-child)::after {
+          content: "";
+          @apply absolute left-[1.35rem] top-12 bottom-[-1.25rem] w-px bg-linear-to-b from-slate-200 to-transparent;
+        }
+
+        .experience-marker {
+          @apply size-11 rounded-2xl text-white text-sm font-bold flex-center shadow-md z-10;
+
+          &.experience-dot-blue {
+            @apply bg-linear-to-br from-blue-500 to-blue-700;
+          }
+
+          &.experience-dot-violet {
+            @apply bg-linear-to-br from-violet-500 to-violet-700;
+          }
+
+          &.experience-dot-emerald {
+            @apply bg-linear-to-br from-emerald-500 to-emerald-700;
+          }
+        }
+
+        .experience-card {
+          @apply rounded-2xl border bg-white p-4 sm:p-5 shadow-sm transition-shadow duration-300 hover:shadow-md;
+
+          .experience-header {
+            @apply flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3 mb-4;
+
+            .experience-title-block {
+              @apply space-y-2;
+
+              .experience-meta {
+                @apply flex flex-wrap items-center gap-2;
+              }
+
+              h4 {
+                @apply text-base sm:text-lg font-semibold text-gray-900;
+              }
+            }
+
+            .experience-company-tag {
+              @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+
+              &.experience-company-blue {
+                @apply bg-blue-50 text-blue-700;
+              }
+
+              &.experience-company-violet {
+                @apply bg-violet-50 text-violet-700;
+              }
+
+              &.experience-company-emerald {
+                @apply bg-emerald-50 text-emerald-700;
+              }
+            }
+
+            .experience-live-badge {
+              @apply px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-wide;
+            }
+
+            .experience-period {
+              @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap w-fit;
+
+              &.experience-badge-blue {
+                @apply bg-blue-50 text-blue-700;
+              }
+
+              &.experience-badge-violet {
+                @apply bg-violet-50 text-violet-700;
+              }
+
+              &.experience-badge-emerald {
+                @apply bg-emerald-50 text-emerald-700;
+              }
+            }
+          }
+
+          .experience-highlights {
+            @apply space-y-2.5;
+
+            li {
+              @apply relative ps-5 text-gray-700 leading-relaxed;
+
+              &::before {
+                content: "";
+                @apply absolute left-0 top-[0.65rem] size-1.5 rounded-full bg-blue-400;
+              }
+            }
+          }
+        }
+
+        &.experience-card-blue .experience-highlights li::before {
+          @apply bg-blue-400;
+        }
+
+        &.experience-card-violet .experience-highlights li::before {
+          @apply bg-violet-400;
+        }
+
+        &.experience-card-emerald .experience-highlights li::before {
+          @apply bg-emerald-400;
+        }
+
+        &.experience-card-blue .experience-card {
+          @apply border-blue-100;
+        }
+
+        &.experience-card-violet .experience-card {
+          @apply border-violet-100;
+        }
+
+        &.experience-card-emerald .experience-card {
+          @apply border-emerald-100;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #experience {
+    @apply top-16;
+
+    .experience-content {
+      @apply max-h-[68vh] p-3;
+
+      .experience-hero {
+        @apply grid-cols-1;
+
+        .experience-hero-stats {
+          @apply w-full;
+        }
+      }
+
+      .experience-timeline .experience-item {
+        @apply grid-cols-[2.25rem_1fr] gap-2.5;
+
+        .experience-marker {
+          @apply size-9 rounded-xl text-xs;
+        }
+      }
+    }
+  }
+}
 
 #contact {
   @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
