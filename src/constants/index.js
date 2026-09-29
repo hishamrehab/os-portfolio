@@ -79,24 +79,30 @@ export const dockApps = [
 export const workExperience = [
   {
     id: 1,
-    company: "Secured Smart Systems",
+    company: "Secured Smart Systems (3S Group)",
     role: "Front-End Developer",
-    period: "02/2026 – Present",
+    period: "10/2025 – Present",
+    initials: "3S",
+    location: "Cairo, Egypt",
+    stack: ["React", "TypeScript", "Redux Toolkit", "TanStack Query", "Fluent UI", "OIDC", "i18next"],
     highlights: [
-      "Built and delivered enterprise-grade admin portals for large-scale clients, including TMG (Talaat Moustafa Group), using React, TypeScript, Redux Toolkit, Fluent UI, and REST APIs.",
+      "Built and delivered enterprise-grade admin portals for large-scale clients, including TMG (Talaat Moustafa Group), using React, TypeScript, Redux Toolkit, TanStack Query, Fluent UI, and REST APIs.",
       "Led the development of a comprehensive Membership Admin Portal, enabling end-to-end membership lifecycle management, including registration, activation, suspension, renewal, and expiration workflows.",
-      "Developed key business modules including member management dashboards, General Assembly attendance and absentee tracking, waiting lists, and quick registration workflows.",
+      "Contributing to the IHUB integration portal, TMG Marketing Management Tool, and a Biometric Identity Management System (BIMS) admin portal.",
       "Integrated OIDC-based authentication and authorization and consumed backend services through an enterprise Admin Gateway architecture.",
+      "Implemented role-based access control, multi-step workflows, and PDF/Excel exports for operational and administrative teams.",
       "Implemented Arabic/English localization (i18next) with full RTL/LTR support, delivering a seamless multilingual user experience.",
       "Built reusable UI components and design-system-driven interfaces using Fluent UI and @3s/components, improving consistency and development efficiency.",
-      "Delivered reporting and export functionality including PDF and Excel exports to support operational and administrative workflows.",
+      "Leveraged AI-assisted development (Claude Code, Cursor, Codex, GitHub Copilot) for scaffolding, refactoring, unit testing, and code review, accelerating feature delivery.",
     ],
   },
   {
     id: 2,
     company: "DATA C",
     role: "Front-End Developer",
-    period: "01/2025 – 02/2026",
+    period: "11/2024 – 01/2026",
+    initials: "DC",
+    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Directus", "GraphQL", "GSAP", "Three.js"],
     highlights: [
       "Designed and delivered CMS-driven applications from scratch using React, Next.js, TypeScript, Tailwind CSS, and Directus CMS, integrating REST and GraphQL APIs.",
       "Developed highly responsive user interfaces with advanced animations and interactive experiences using GSAP, Framer Motion, and Three.js.",
@@ -109,7 +115,9 @@ export const workExperience = [
     id: 3,
     company: "Freelance",
     role: "Front-End Developer",
-    period: "01/2024 – 01/2025",
+    period: "02/2024 – 01/2025",
+    initials: "FL",
+    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     highlights: [
       "Built responsive and performant web applications using React.js, Next.js, TypeScript, and modern frontend tooling.",
       "Delivered custom client solutions with a focus on scalability, accessibility, and user experience.",
@@ -215,11 +223,21 @@ export const techStack = [
     items: ["React Query (TanStack Query)", "Redux Toolkit + RTK Query", "Zustand"],
   },
   {
+    category: "Forms & Validation",
+    items: ["React Hook Form", "Zod"],
+  },
+  {
+    category: "APIs & Integration",
+    items: ["REST", "GraphQL", "OpenAPI", "Axios", "WebSockets"],
+  },
+  {
     category: "Styling & Components",
     items: [
       "Tailwind CSS",
+      "Fluent UI",
       "Shadcn/UI",
       "Radix UI",
+      "Storybook",
       "Sass/SCSS",
       "Material UI",
       "Styled Components",
@@ -228,12 +246,33 @@ export const techStack = [
     ],
   },
   {
-    category: "Backend & APIs",
+    category: "Testing",
+    items: ["Jest", "Vitest", "React Testing Library", "Cypress", "Playwright"],
+  },
+  {
+    category: "Security & i18n",
+    items: ["OIDC", "OAuth 2.0", "JWT", "RBAC", "i18next", "RTL/LTR (Arabic/English)"],
+  },
+  {
+    category: "Performance & Accessibility",
+    items: ["Core Web Vitals", "Lighthouse", "Code Splitting", "Lazy Loading", "WCAG"],
+  },
+  {
+    category: "Backend & CMS",
     items: [
       "Node.js",
-      "REST & GraphQL APIs",
-      "Authentication (JWT, OAuth2)",
       "Headless CMS (Directus)"
+    ],
+  },
+  {
+    category: "AI & LLMs",
+    items: [
+      "Claude Code",
+      "Cursor",
+      "Codex",
+      "GitHub Copilot",
+      "Prompt Engineering",
+      "LLM APIs (OpenAI, Claude, Gemini)"
     ],
   },
   {
@@ -244,20 +283,26 @@ export const techStack = [
       "SQLite",
       "Docker & Docker Compose",
       "Vercel & Netlify",
-      "CI/CD (GitHub Actions)",
+      "CI/CD (GitHub Actions, Azure DevOps Pipelines)",
       "Firebase",
-      "Git"
+      "Git & GitHub"
     ],
+  },
+  {
+    category: "Tools",
+    items: ["Vite", "Jira", "Figma", "Postman"],
   },
   {
     category: "Professional Engineering",
     items: [
+      "Feature-based & Clean Architecture",
+      "SOLID",
       "OOP",
       "Data Structures & Algorithms",
       "System Design (LLD/HLD)",
       "Responsive Design", "Performance Optimization",
       "Design Patterns",
-      "Architecture"
+      "Agile / Scrum"
     ],
   }
 ];
@@ -289,6 +334,233 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
+    // Project: IHUB Portal (Enterprise Client)
+    {
+      id: 115,
+      name: "IHUB Portal",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-[5vh] left-[2vw]",
+      children: [
+        {
+          id: 11501,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "IHUB Portal: International Hub Integration Admin Portal — an enterprise admin portal for managing parties, endpoints, contracts, and integrations between organizations.",
+            "Built the Integrations module end to end (filterable list, validated forms, details view, status toggle) on a typed OpenAPI client service layer with localized error handling.",
+            "Delivered Arabic/English RTL/LTR support and Vitest + React Testing Library unit tests in a lazy-loaded, feature-based architecture.",
+            "Confidential enterprise client project (08/2026 – Present)."
+          ]
+        },
+        {
+          id: 11502,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Management of parties, endpoints, contracts, and integrations",
+            "- Integrations module: filterable list, validated forms, details view, status toggle",
+            "- Typed OpenAPI client service layer with localized error handling",
+            "- Arabic/English localization with RTL/LTR layouts",
+            "- Lazy-loaded, feature-based architecture",
+            "- Unit tests with Vitest + React Testing Library"
+          ]
+        },
+        {
+          id: 11503,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript, Redux Toolkit",
+            "- UI: Fluent UI, Tailwind CSS",
+            "- APIs: Typed OpenAPI client",
+            "- i18n: Arabic/English RTL/LTR",
+            "- Testing: Vitest, React Testing Library"
+          ]
+        }
+      ]
+    },
+    // Project: TMG Marketing Management Tool (Enterprise Client)
+    {
+      id: 116,
+      name: "TMG Marketing Management Tool",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-[22vh] left-[2vw]",
+      children: [
+        {
+          id: 11601,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TMG Marketing Management Tool: A campaign management platform for TMG (Talaat Moustafa Group) marketing operations.",
+            "Covers multi-channel campaigns, announcements, audience targeting, and performance reporting, with role-based access control for privileges and employee management.",
+            "Integrated an auto-generated OpenAPI/REST client and built generic sortable data tables, pagination, and filter panels shared across all modules.",
+            "Confidential enterprise client project (04/2026 – Present)."
+          ]
+        },
+        {
+          id: 11602,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Multi-channel campaign management",
+            "- Announcements and audience targeting",
+            "- Performance reporting",
+            "- Role-based access control for privileges and employee management",
+            "- Generic sortable data tables, pagination, and filter panels shared across modules",
+            "- Arabic/English localization with i18next"
+          ]
+        },
+        {
+          id: 11603,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript",
+            "- UI: Fluent UI",
+            "- APIs: Auto-generated OpenAPI/REST client",
+            "- i18n: i18next"
+          ]
+        }
+      ]
+    },
+    // Project: Biometric Identity Management System (Enterprise Client)
+    {
+      id: 117,
+      name: "BIMS - Biometric Identity",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-[39vh] left-[2vw]",
+      children: [
+        {
+          id: 11701,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Biometric Identity Management System (BIMS): Admin portal for an enterprise biometric identity platform covering enrollment, verification, devices, and system administration.",
+            "Delivered the multi-step enrollment wizard with face, fingerprint, iris, and voice capture; now building the identity verification module against matcher APIs.",
+            "Designed a feature-based architecture with React Query, Zod-validated API contracts, and React Hook Form, with accessible Radix UI + Tailwind UI and full Arabic/English RTL support.",
+            "Confidential enterprise client project (03/2026 – Present)."
+          ]
+        },
+        {
+          id: 11702,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Multi-step enrollment wizard with face, fingerprint, iris, and voice capture",
+            "- Identity verification module against matcher APIs",
+            "- Device and system administration",
+            "- Zod-validated API contracts",
+            "- Accessible UI with Radix UI + Tailwind CSS",
+            "- Full Arabic/English RTL support"
+          ]
+        },
+        {
+          id: 11703,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript",
+            "- Data: TanStack Query",
+            "- Forms/Validation: React Hook Form + Zod",
+            "- UI: Radix UI, Tailwind CSS",
+            "- Architecture: Feature-based"
+          ]
+        }
+      ]
+    },
+    // Project 3: TMG Membership Admin Portal (Enterprise Client)
+    {
+      id: 114,
+      name: "TMG Membership Admin Portal",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-[56vh] left-[2vw]",
+      children: [
+        {
+          id: 11401,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TMG Membership Admin Portal: Enterprise membership management platform for TMG (Talaat Moustafa Group), supporting the full member lifecycle from registration to renewal and expiry.",
+            "Built key modules including a multi-step registration wizard, member management dashboards, waiting lists, quick registration, and General Assembly tracking.",
+            "Integrated OIDC authentication, REST APIs, and enterprise gateway services for a secure and scalable architecture.",
+            "Delivered Arabic/English localization (i18next) with RTL/LTR support and PDF/Excel export functionality.",
+            "Confidential enterprise client project—internal admin portal for TMG membership operations."
+          ]
+        },
+        {
+          id: 11402,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Full member lifecycle: registration, renewal, and expiry management",
+            "- Multi-step registration wizard and quick registration flows",
+            "- Member management dashboards and waiting list workflows",
+            "- General Assembly tracking module",
+            "- OIDC authentication with REST APIs and enterprise gateway integration",
+            "- Arabic/English localization (i18next) with RTL/LTR layout support",
+            "- PDF and Excel export for reporting and operational workflows",
+            "- Reusable Fluent UI components and design-system-driven interfaces"
+          ]
+        },
+        {
+          id: 11403,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript, Redux Toolkit, Fluent UI",
+            "- Auth: OIDC authentication",
+            "- APIs: REST APIs, enterprise gateway services",
+            "- i18n: i18next with Arabic/English RTL/LTR support",
+            "- Export: PDF and Excel export functionality",
+            "- Architecture: Reusable component library and design-system-driven UI"
+          ]
+        }
+      ]
+    },
     // Project 1: OnSoftwares
     {
       id: 100,
@@ -296,7 +568,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-20 right-10",
-      windowPosition: "top-[5vh] left-[2vw]",
+      windowPosition: "top-[5vh] left-[13vw]",
       children: [
         {
           id: 1061,
@@ -410,12 +682,12 @@ const WORK_LOCATION = {
     },
     // Project 2: NVESTIA (Private Client)
     {
-      id: 1010,  // Or next available
+      id: 1010,  
       name: "NVESTIA",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-80 left-60",  
-      windowPosition: "top-[20vh] left-[2vw]",
+      windowPosition: "top-[22vh] left-[13vw]",
       children: [
         {
           id: 1061,
@@ -464,66 +736,6 @@ const WORK_LOCATION = {
         }
       ]
     },
-    // Project 3: TMG Membership Admin Portal (Enterprise Client)
-    {
-      id: 114,
-      name: "TMG Membership Admin Portal",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-95 left-25",
-      windowPosition: "top-[15vh] left-[8vw]",
-      children: [
-        {
-          id: 11401,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "TMG Membership Admin Portal: Enterprise membership management platform for TMG (Talaat Moustafa Group), supporting the full member lifecycle from registration to renewal and expiry.",
-            "Built key modules including a multi-step registration wizard, member management dashboards, waiting lists, quick registration, and General Assembly tracking.",
-            "Integrated OIDC authentication, REST APIs, and enterprise gateway services for a secure and scalable architecture.",
-            "Delivered Arabic/English localization (i18next) with RTL/LTR support and PDF/Excel export functionality.",
-            "Confidential enterprise client project—internal admin portal for TMG membership operations."
-          ]
-        },
-        {
-          id: 11402,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Full member lifecycle: registration, renewal, and expiry management",
-            "- Multi-step registration wizard and quick registration flows",
-            "- Member management dashboards and waiting list workflows",
-            "- General Assembly tracking module",
-            "- OIDC authentication with REST APIs and enterprise gateway integration",
-            "- Arabic/English localization (i18next) with RTL/LTR layout support",
-            "- PDF and Excel export for reporting and operational workflows",
-            "- Reusable Fluent UI components and design-system-driven interfaces"
-          ]
-        },
-        {
-          id: 11403,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React, TypeScript, Redux Toolkit, Fluent UI",
-            "- Auth: OIDC authentication",
-            "- APIs: REST APIs, enterprise gateway services",
-            "- i18n: i18next with Arabic/English RTL/LTR support",
-            "- Export: PDF and Excel export functionality",
-            "- Architecture: Reusable component library and design-system-driven UI"
-          ]
-        }
-      ]
-    },
     // Project 4: FILMPIRE
     {
       id: 101,
@@ -531,7 +743,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[40vh] left-[3vw]",
+      windowPosition: "top-[22vh] right-[13vw]",
       children: [
         {
           id: 1011,
@@ -605,7 +817,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 left-80",
-      windowPosition: "top-[50vh] left-[14vw]",
+      windowPosition: "top-[5vh] right-[13vw]",
       children: [
         {
           id: 1021,
@@ -677,7 +889,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 right-40",
-      windowPosition: "top-[25vh] right-[25vw]",
+      windowPosition: "top-[22vh] right-[2vw]",
       children: [
         {
           id: 1031,
@@ -748,7 +960,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-100 right-60",
-      windowPosition: "top-[10vh] right-[50vw]",
+      windowPosition: "top-[5vh] right-[2vw]",
       children: [
         {
           id: 10501,
@@ -865,7 +1077,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-120 left-20",
-      windowPosition: "top-[27vh] left-[20vw]",
+      windowPosition: "top-[56vh] right-[2vw]",
       children: [
         {
           id: 1061,
@@ -986,7 +1198,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-180 right-20",
-      windowPosition: "top-[40vh] right-[25vw]",
+      windowPosition: "top-[56vh] right-[13vw]",
       children: [
         {
           id: 1091,
@@ -1081,105 +1293,105 @@ const WORK_LOCATION = {
       ]
     },
     // Project 8 : GPT Horizon
-    {
-      id: 107,
-      name: "GPT Horizon",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-140 right-40",
-      windowPosition: "top-[20vh] right-[10vw]",
-      children: [
-        {
-          id: 1071,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "GPT Horizon: An introductory landing page providing an overview of ChatGPT and GPT technologies.",
-            "Designed as an educational demo with sections on GPT basics, applications (chatbots, knowledgebases, education), and a blog for AI insights.",
-            "Built with React for a minimalistic, animated UI—ideal for quick prototyping and showcasing frontend skills.",
-            "Features placeholder content for easy customization; deployed on Vercel for seamless access."
-          ]
-        },
-        {
-          id: 1072,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Introductory sections: 'What is GPT' and 'The possibilities are beyond your imagination'",
-            "- Application highlights: Chatbots, Knowledgebase, Education",
-            "- Motivational content blocks with placeholder text",
-            "- Blog section with article previews and 'Read Full Article' links",
-            "- 'Request Early Access' call-to-action",
-            "- Footer with links, company info, and contact details"
-          ]
-        },
-        {
-          id: 1073,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Core: React, Create React App",
-            "- Styling: CSS with BEM methodology",
-            "- Design Tools: Angry Tools (gradients), Animista.net (animations)",
-            "- Build/Deploy: npm scripts, Vercel"
-          ]
-        },
-        {
-          id: 1074,
-          name: "Live Demo.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://chat-gpt-overview.vercel.app/",
-          position: "top-35 right-20"
-        },
-        {
-          id: 1075,
-          name: "Source Code.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/ChatGPT_Overview",
-          position: "top-45 left-20"
-        },
-        {
-          id: 1076,
-          name: "gpt.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-55 right-80",
-          imageUrl: "/images/gpt1.png"
-        },
-        {
-          id: 1077,
-          name: "gpt.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-65 left-80",
-          imageUrl: "/images/gpt2.png"
-        },
-        {
-          id: 1078,
-          name: "gpt.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/gpt3.png"
-        }
-      ]
-    },
+    // {
+    //   id: 107,
+    //   name: "GPT Horizon",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-140 right-40",
+    //   windowPosition: "top-[20vh] right-[10vw]",
+    //   children: [
+    //     {
+    //       id: 1071,
+    //       name: "Project Overview.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 left-10",
+    //       description: [
+    //         "GPT Horizon: An introductory landing page providing an overview of ChatGPT and GPT technologies.",
+    //         "Designed as an educational demo with sections on GPT basics, applications (chatbots, knowledgebases, education), and a blog for AI insights.",
+    //         "Built with React for a minimalistic, animated UI—ideal for quick prototyping and showcasing frontend skills.",
+    //         "Features placeholder content for easy customization; deployed on Vercel for seamless access."
+    //       ]
+    //     },
+    //     {
+    //       id: 1072,
+    //       name: "Key Features.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-15 left-30",
+    //       description: [
+    //         "- Introductory sections: 'What is GPT' and 'The possibilities are beyond your imagination'",
+    //         "- Application highlights: Chatbots, Knowledgebase, Education",
+    //         "- Motivational content blocks with placeholder text",
+    //         "- Blog section with article previews and 'Read Full Article' links",
+    //         "- 'Request Early Access' call-to-action",
+    //         "- Footer with links, company info, and contact details"
+    //       ]
+    //     },
+    //     {
+    //       id: 1073,
+    //       name: "Tech Stack.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-25 left-40",
+    //       description: [
+    //         "- Core: React, Create React App",
+    //         "- Styling: CSS with BEM methodology",
+    //         "- Design Tools: Angry Tools (gradients), Animista.net (animations)",
+    //         "- Build/Deploy: npm scripts, Vercel"
+    //       ]
+    //     },
+    //     {
+    //       id: 1074,
+    //       name: "Live Demo.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://chat-gpt-overview.vercel.app/",
+    //       position: "top-35 right-20"
+    //     },
+    //     {
+    //       id: 1075,
+    //       name: "Source Code.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://github.com/hishamrehab/ChatGPT_Overview",
+    //       position: "top-45 left-20"
+    //     },
+    //     {
+    //       id: 1076,
+    //       name: "gpt.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-55 right-80",
+    //       imageUrl: "/images/gpt1.png"
+    //     },
+    //     {
+    //       id: 1077,
+    //       name: "gpt.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-65 left-80",
+    //       imageUrl: "/images/gpt2.png"
+    //     },
+    //     {
+    //       id: 1078,
+    //       name: "gpt.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-75 right-80",
+    //       imageUrl: "/images/gpt3.png"
+    //     }
+    //   ]
+    // },
 
     // Project 9 : Omnifood
     {
@@ -1188,7 +1400,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-160 left-5",
-      windowPosition: "top-[55vh] left-[3vw]",
+      windowPosition: "top-[39vh] right-[13vw]",
       children: [
         {
           id: 1081,
@@ -1283,109 +1495,109 @@ const WORK_LOCATION = {
       ]
     },
     //  Project 10 : Agency AI 
-    {
-      id: 110,
-      name: "Agency AI ",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-200 left-40",         
-      windowPosition: "top-20 left-120",
-      children: [
-        {
-          id: 1101,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "Agency AI: Enterprise-grade SaaS orchestration platform built for elite technical agencies.",
-            "Serves as a 'Technical Marketplace' + 'Blueprinting Engine' demonstrating production-level architecture.",
-            "Showcases: Documentation hub with SOC2/GDPR/E2EE specs, AI RAG framework, interactive team profiles with case-study linking,",
-            "deep-technical blog (2026 SaaS trends), interactive pricing matrix (Lite/Growth/Enterprise), and functional AI-simulated dashboard.",
-            "Emphasizes scalability, security, clean code, and product-led growth — positioned as multi-million dollar infrastructure ready.",
-            "Live: https://nextusforge-enterprise-ai-platform.vercel.app/"
-          ]
-        },
-        {
-          id: 1102,
-          name: "Live Demo.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://nextusforge-enterprise-ai-platform.vercel.app/",
-          position: "top-15 left-20"
-        },
-        {
-          id: 1103,
-          name: "GitHub Repository.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/Nextusforge-Ai-Platform",
-          position: "top-25 left-35"
-        },
-        {
-          id: 1104,
-          name: "Tech Stack & Architecture.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-35 left-50",
-          description: [
-            "Frontend: React , Tailwind CSS, Framer Motion, Lucide icons",
-            "State: React Context API + persistent localStorage",
-            "Architecture: Full code-splitting, lazy-loading, decoupled data (nexusData.js / docsData.js), zero visual debt atomic design",
-            "Performance: Route-based splitting, responsive from iPhone SE → 4K, high Lighthouse potential",
-            "Enterprise mindset: SOC2 Type II / GDPR / E2EE references, 99.99% SLA simulation, AI-native (RAG / LLM orchestration docs)"
-          ]
-        },
-        {
-          id: 1105,
-          name: "Key Sections.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-50 left-25",
-          description: [
-            "• Blueprinting Hub — deep docs (Nexus Stack, security, AI RAG)",
-            "• Team Marketplace — pro profiles + linked case studies + social grid",
-            "• Knowledge Hub (Forge Blog) — filtered technical articles, Framer Motion UX",
-            "• Pricing & Scaling Analytics — interactive tiers + trust badges + CTAs",
-            "• Content Forge Dashboard — simulated LLM content gen + history + UX polish"
-          ]
-        },
+    // {
+    //   id: 110,
+    //   name: "Agency AI ",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-200 left-40",         
+    //   windowPosition: "top-20 left-120",
+    //   children: [
+    //     {
+    //       id: 1101,
+    //       name: "Project Overview.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 left-10",
+    //       description: [
+    //         "Agency AI: Enterprise-grade SaaS orchestration platform built for elite technical agencies.",
+    //         "Serves as a 'Technical Marketplace' + 'Blueprinting Engine' demonstrating production-level architecture.",
+    //         "Showcases: Documentation hub with SOC2/GDPR/E2EE specs, AI RAG framework, interactive team profiles with case-study linking,",
+    //         "deep-technical blog (2026 SaaS trends), interactive pricing matrix (Lite/Growth/Enterprise), and functional AI-simulated dashboard.",
+    //         "Emphasizes scalability, security, clean code, and product-led growth — positioned as multi-million dollar infrastructure ready.",
+    //         "Live: https://nextusforge-enterprise-ai-platform.vercel.app/"
+    //       ]
+    //     },
+    //     {
+    //       id: 1102,
+    //       name: "Live Demo.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://nextusforge-enterprise-ai-platform.vercel.app/",
+    //       position: "top-15 left-20"
+    //     },
+    //     {
+    //       id: 1103,
+    //       name: "GitHub Repository.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://github.com/hishamrehab/Nextusforge-Ai-Platform",
+    //       position: "top-25 left-35"
+    //     },
+    //     {
+    //       id: 1104,
+    //       name: "Tech Stack & Architecture.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-35 left-50",
+    //       description: [
+    //         "Frontend: React , Tailwind CSS, Framer Motion, Lucide icons",
+    //         "State: React Context API + persistent localStorage",
+    //         "Architecture: Full code-splitting, lazy-loading, decoupled data (nexusData.js / docsData.js), zero visual debt atomic design",
+    //         "Performance: Route-based splitting, responsive from iPhone SE → 4K, high Lighthouse potential",
+    //         "Enterprise mindset: SOC2 Type II / GDPR / E2EE references, 99.99% SLA simulation, AI-native (RAG / LLM orchestration docs)"
+    //       ]
+    //     },
+    //     {
+    //       id: 1105,
+    //       name: "Key Sections.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-50 left-25",
+    //       description: [
+    //         "• Blueprinting Hub — deep docs (Nexus Stack, security, AI RAG)",
+    //         "• Team Marketplace — pro profiles + linked case studies + social grid",
+    //         "• Knowledge Hub (Forge Blog) — filtered technical articles, Framer Motion UX",
+    //         "• Pricing & Scaling Analytics — interactive tiers + trust badges + CTAs",
+    //         "• Content Forge Dashboard — simulated LLM content gen + history + UX polish"
+    //       ]
+    //     },
 
-        // Add screenshot placeholders — replace imageUrl with your actual screenshot paths when available
-        {
-          id: 1106,
-          name: "nexusforge-home.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-65 right-60",
-          imageUrl: "/images/nexusforge-home.png"   // homepage / hero + nav
-        },
-        {
-          id: 1107,
-          name: "nexusforge-docs.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-80 right-75",
-          imageUrl: "/images/nexusforge-docs.png"   // docs / blueprinting hub
-        },
-        {
-          id: 1108,
-          name: "nexusforge-pricing.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-95 right-50",
-          imageUrl: "/images/nexusforge-pricing.png" // pricing comparison
-        }
-      ]
-    },
+    //     // Add screenshot placeholders — replace imageUrl with your actual screenshot paths when available
+    //     {
+    //       id: 1106,
+    //       name: "nexusforge-home.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-65 right-60",
+    //       imageUrl: "/images/nexusforge-home.png"   // homepage / hero + nav
+    //     },
+    //     {
+    //       id: 1107,
+    //       name: "nexusforge-docs.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-80 right-75",
+    //       imageUrl: "/images/nexusforge-docs.png"   // docs / blueprinting hub
+    //     },
+    //     {
+    //       id: 1108,
+    //       name: "nexusforge-pricing.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-95 right-50",
+    //       imageUrl: "/images/nexusforge-pricing.png" // pricing comparison
+    //     }
+    //   ]
+    // },
     // Project 11 : YouTube 
      {
       id: 111,
@@ -1393,7 +1605,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-220 left-60",
-      windowPosition: "top-[30vh] left-[12vw]",
+      windowPosition: "top-[39vh] right-[2vw]",
       children: [
         {
           id: 11101,
@@ -1505,7 +1717,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-[60vh] left-[40vw]",
-      windowPosition: "top-[10vh] left-[10vw]",
+      windowPosition: "top-[39vh] left-[13vw]",
       children: [
         {
           id: 11201,
@@ -1601,107 +1813,107 @@ const WORK_LOCATION = {
       ],
     },
     // Project 13 : TechInsight
-    {
-      id: 113,
-      name: "TechInsight",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-[80vh] right-[8vw]",
-      windowPosition: "top-[12vh] left-[20vw]",
-      children: [
-        {
-          id: 11301,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "TechInsight: A frontend technology content platform built with React, TypeScript, and Vite for curated learning and discovery.",
-            "Features category-driven browsing, article search/filtering, article and category detail pages, and a polished multi-page UX.",
-            "Includes a dedicated Generation page for focused learning tracks and an onboarding flow to personalize content interests.",
-            "Implements client-side authentication context with protected-route support for demo user flows."
-          ]
-        },
-        {
-          id: 11302,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Curated tech articles with category filters and search",
-            "- Category and article detail pages with related content",
-            "- Multi-page routing (Home, Articles, Categories, About, Generation, Get Started)",
-            "- Demo auth context + protected route support",
-            "- Responsive UI with reusable layouts/components",
-            "- Fast Vite-based development and production build workflow"
-          ]
-        },
-        {
-          id: 11303,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Core: React 19, TypeScript",
-            "- Build Tooling: Vite",
-            "- Routing: React Router DOM",
-            "- Styling: Tailwind CSS v4 + SCSS",
-            "- Quality: ESLint + TypeScript checks",
-            "- Architecture: Component-driven pages with local content data modules"
-          ]
-        },
-        {
-          id: 11304,
-          name: "Live Demo.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://tech-insight-two.vercel.app/",
-          position: "top-35 left-20"
-        },
-        {
-          id: 11305,
-          name: "Source Code.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/TechInsight",
-          position: "top-45 right-20"
-        },
-        {
-          id: 11306,
-          name: "techinsight-1.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-55 right-80",
-          imageUrl: "/images/techinsight1.png"
-        },
-        {
-          id: 11307,
-          name: "techinsight-2.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-65 left-80",
-          imageUrl: "/images/techinsight2.png"
-        },
-        {
-          id: 11308,
-          name: "techinsight-3.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/techinsight3.png"
-        }
-      ]
-    }
+    // {
+    //   id: 113,
+    //   name: "TechInsight",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-[80vh] right-[8vw]",
+    //   windowPosition: "top-[12vh] left-[20vw]",
+    //   children: [
+    //     {
+    //       id: 11301,
+    //       name: "Project Overview.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 left-10",
+    //       description: [
+    //         "TechInsight: A frontend technology content platform built with React, TypeScript, and Vite for curated learning and discovery.",
+    //         "Features category-driven browsing, article search/filtering, article and category detail pages, and a polished multi-page UX.",
+    //         "Includes a dedicated Generation page for focused learning tracks and an onboarding flow to personalize content interests.",
+    //         "Implements client-side authentication context with protected-route support for demo user flows."
+    //       ]
+    //     },
+    //     {
+    //       id: 11302,
+    //       name: "Key Features.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-15 left-30",
+    //       description: [
+    //         "- Curated tech articles with category filters and search",
+    //         "- Category and article detail pages with related content",
+    //         "- Multi-page routing (Home, Articles, Categories, About, Generation, Get Started)",
+    //         "- Demo auth context + protected route support",
+    //         "- Responsive UI with reusable layouts/components",
+    //         "- Fast Vite-based development and production build workflow"
+    //       ]
+    //     },
+    //     {
+    //       id: 11303,
+    //       name: "Tech Stack.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-25 left-40",
+    //       description: [
+    //         "- Core: React 19, TypeScript",
+    //         "- Build Tooling: Vite",
+    //         "- Routing: React Router DOM",
+    //         "- Styling: Tailwind CSS v4 + SCSS",
+    //         "- Quality: ESLint + TypeScript checks",
+    //         "- Architecture: Component-driven pages with local content data modules"
+    //       ]
+    //     },
+    //     {
+    //       id: 11304,
+    //       name: "Live Demo.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://tech-insight-two.vercel.app/",
+    //       position: "top-35 left-20"
+    //     },
+    //     {
+    //       id: 11305,
+    //       name: "Source Code.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://github.com/hishamrehab/TechInsight",
+    //       position: "top-45 right-20"
+    //     },
+    //     {
+    //       id: 11306,
+    //       name: "techinsight-1.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-55 right-80",
+    //       imageUrl: "/images/techinsight1.png"
+    //     },
+    //     {
+    //       id: 11307,
+    //       name: "techinsight-2.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-65 left-80",
+    //       imageUrl: "/images/techinsight2.png"
+    //     },
+    //     {
+    //       id: 11308,
+    //       name: "techinsight-3.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-75 right-80",
+    //       imageUrl: "/images/techinsight3.png"
+    //     }
+    //   ]
+    // }
   ],
 };
 
@@ -1724,10 +1936,57 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Front-End Developer",
       description: [
-        "I'm Hisham Rehab — a front-end developer with over 2 years of experience crafting scalable, high-performance web applications.",
-        "Core expertise: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Git.",
-        "Delivered nearly 10 large-scale projects (at DATA C and freelance projects): responsive UIs, REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, Vite).",
+        "I'm Hisham Rehab — a front-end developer based in Cairo, Egypt, with 3+ years of experience building enterprise-grade web applications, SaaS platforms, and large-scale administrative systems.",
+        "Core expertise: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Redux Toolkit, TanStack Query, Git.",
+        "Currently at Secured Smart Systems (3S Group), building enterprise admin portals for clients such as TMG (Talaat Moustafa Group) with OIDC authentication, role-based access control, and full Arabic/English RTL/LTR localization.",
+        "Previously delivered CMS-driven apps at DATA C and freelance projects: REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, code splitting).",
+        "I leverage AI-assisted development tools (Claude Code, Cursor, Codex, Copilot) and integrate AI capabilities (OpenAI, Claude, Gemini) into modern web applications.",
         "Priorities: clean & maintainable code, intuitive user experience, fully responsive design, and production-grade scalability."
+      ],
+    },
+    {
+      id: 5,
+      name: "education.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-10 left-40",
+      subtitle: "Education",
+      description: [
+        "Bachelor of Engineering in Communications and Computer Engineering",
+        "Faculty of Engineering, Tanta University — 2021 – 2026"
+      ],
+    },
+    {
+      id: 6,
+      name: "courses.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-60 left-40",
+      subtitle: "Courses",
+      description: [
+        "- React – The Complete Guide | Maximilian Schwarzmüller (Udemy)",
+        "- Next.js & React – The Complete Guide | Maximilian Schwarzmüller (Udemy)",
+        "- JavaScript – The Complete Guide | Maximilian Schwarzmüller (Udemy)",
+        "- Advanced CSS and Sass: Flexbox, Grid, Animations | Jonas Schmedtmann (Udemy)",
+        "- Mastering Data Structures & Algorithms using C and C++ | Abdul Bari (Udemy)",
+        "- Harvard CS50: Introduction to Computer Science | Harvard University / freeCodeCamp",
+        "- Git & GitHub Masterclass | Udemy",
+        "- Critical Thinking & Problem Solving | Udemy"
+      ],
+    },
+    {
+      id: 7,
+      name: "languages.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-10 left-5",
+      subtitle: "Languages",
+      description: [
+        "Arabic — Native",
+        "English — Professional working proficiency"
       ],
     },
   ],
