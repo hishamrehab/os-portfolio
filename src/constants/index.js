@@ -111,19 +111,6 @@ export const workExperience = [
       "Implemented reusable components, clean architecture patterns, and maintainable codebases to improve development velocity and long-term scalability.",
     ],
   },
-  {
-    id: 3,
-    company: "Freelance",
-    role: "Front-End Developer",
-    period: "02/2024 – 01/2025",
-    initials: "FL",
-    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    highlights: [
-      "Built responsive and performant web applications using React.js, Next.js, TypeScript, and modern frontend tooling.",
-      "Delivered custom client solutions with a focus on scalability, accessibility, and user experience.",
-      "Created and maintained 20+ GitHub projects demonstrating expertise in React, Next.js, TypeScript, Tailwind CSS, and frontend best practices.",
-    ],
-  },
 ];
 
 
@@ -1936,10 +1923,10 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Front-End Developer",
       description: [
-        "I'm Hisham Rehab — a front-end developer based in Cairo, Egypt, with 3+ years of experience building enterprise-grade web applications, SaaS platforms, and large-scale administrative systems.",
+        "I'm Hisham Rehab — a front-end developer based in Cairo, Egypt, with 2+ years of experience building enterprise-grade web applications, SaaS platforms, and large-scale administrative systems.",
         "Core expertise: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Redux Toolkit, TanStack Query, Git.",
         "Currently at Secured Smart Systems (3S Group), building enterprise admin portals for clients such as TMG (Talaat Moustafa Group) with OIDC authentication, role-based access control, and full Arabic/English RTL/LTR localization.",
-        "Previously delivered CMS-driven apps at DATA C and freelance projects: REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, code splitting).",
+        "Previously delivered CMS-driven apps at DATA C: REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, code splitting).",
         "I leverage AI-assisted development tools (Claude Code, Cursor, Codex, Copilot) and integrate AI capabilities (OpenAI, Claude, Gemini) into modern web applications.",
         "Priorities: clean & maintainable code, intuitive user experience, fully responsive design, and production-grade scalability."
       ],

@@ -54,7 +54,7 @@ const Experience = () => {
 
         <div className="footnote">
           <p>
-            <Check size={14} /> System: {workExperience.length} roles loaded successfully (3+ years)
+            <Check size={14} /> System: {workExperience.length} roles loaded successfully (2+ years)
           </p>
 
           <p className="render-time">
