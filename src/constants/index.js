@@ -82,9 +82,6 @@ export const workExperience = [
     company: "Secured Smart Systems (3S Group)",
     role: "Front-End Developer",
     period: "10/2025 – Present",
-    initials: "3S",
-    location: "Cairo, Egypt",
-    stack: ["React", "TypeScript", "Redux Toolkit", "TanStack Query", "Fluent UI", "OIDC", "i18next"],
     highlights: [
       "Built and delivered enterprise-grade admin portals for large-scale clients, including TMG (Talaat Moustafa Group), using React, TypeScript, Redux Toolkit, TanStack Query, Fluent UI, and REST APIs.",
       "Led the development of a comprehensive Membership Admin Portal, enabling end-to-end membership lifecycle management, including registration, activation, suspension, renewal, and expiration workflows.",
@@ -101,14 +98,23 @@ export const workExperience = [
     company: "DATA C",
     role: "Front-End Developer",
     period: "11/2024 – 01/2026",
-    initials: "DC",
-    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Directus", "GraphQL", "GSAP", "Three.js"],
     highlights: [
       "Designed and delivered CMS-driven applications from scratch using React, Next.js, TypeScript, Tailwind CSS, and Directus CMS, integrating REST and GraphQL APIs.",
       "Developed highly responsive user interfaces with advanced animations and interactive experiences using GSAP, Framer Motion, and Three.js.",
       "Optimized application performance through React Query caching, lazy loading, code splitting, memoization, and asset optimization, achieving up to 50% faster page load times.",
       "Collaborated with UX/UI designers, backend engineers, and stakeholders in Agile teams to deliver scalable, production-ready solutions.",
       "Implemented reusable components, clean architecture patterns, and maintainable codebases to improve development velocity and long-term scalability.",
+    ],
+  },
+  {
+    id: 3,
+    company: "Freelance",
+    role: "Front-End Developer",
+    period: "02/2024 – 01/2025",
+    highlights: [
+      "Built responsive and performant web applications using React.js, Next.js, TypeScript, and modern frontend tooling.",
+      "Delivered custom client solutions with a focus on scalability, accessibility, and user experience.",
+      "Created and maintained 20+ GitHub projects demonstrating expertise in React, Next.js, TypeScript, Tailwind CSS, and frontend best practices.",
     ],
   },
 ];
@@ -321,233 +327,6 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // Project: IHUB Portal (Enterprise Client)
-    {
-      id: 115,
-      name: "IHUB Portal",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-95 left-25",
-      windowPosition: "top-[5vh] left-[2vw]",
-      children: [
-        {
-          id: 11501,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "IHUB Portal: International Hub Integration Admin Portal — an enterprise admin portal for managing parties, endpoints, contracts, and integrations between organizations.",
-            "Built the Integrations module end to end (filterable list, validated forms, details view, status toggle) on a typed OpenAPI client service layer with localized error handling.",
-            "Delivered Arabic/English RTL/LTR support and Vitest + React Testing Library unit tests in a lazy-loaded, feature-based architecture.",
-            "Confidential enterprise client project (08/2026 – Present)."
-          ]
-        },
-        {
-          id: 11502,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Management of parties, endpoints, contracts, and integrations",
-            "- Integrations module: filterable list, validated forms, details view, status toggle",
-            "- Typed OpenAPI client service layer with localized error handling",
-            "- Arabic/English localization with RTL/LTR layouts",
-            "- Lazy-loaded, feature-based architecture",
-            "- Unit tests with Vitest + React Testing Library"
-          ]
-        },
-        {
-          id: 11503,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React, TypeScript, Redux Toolkit",
-            "- UI: Fluent UI, Tailwind CSS",
-            "- APIs: Typed OpenAPI client",
-            "- i18n: Arabic/English RTL/LTR",
-            "- Testing: Vitest, React Testing Library"
-          ]
-        }
-      ]
-    },
-    // Project: TMG Marketing Management Tool (Enterprise Client)
-    {
-      id: 116,
-      name: "TMG Marketing Management Tool",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-95 left-25",
-      windowPosition: "top-[22vh] left-[2vw]",
-      children: [
-        {
-          id: 11601,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "TMG Marketing Management Tool: A campaign management platform for TMG (Talaat Moustafa Group) marketing operations.",
-            "Covers multi-channel campaigns, announcements, audience targeting, and performance reporting, with role-based access control for privileges and employee management.",
-            "Integrated an auto-generated OpenAPI/REST client and built generic sortable data tables, pagination, and filter panels shared across all modules.",
-            "Confidential enterprise client project (04/2026 – Present)."
-          ]
-        },
-        {
-          id: 11602,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Multi-channel campaign management",
-            "- Announcements and audience targeting",
-            "- Performance reporting",
-            "- Role-based access control for privileges and employee management",
-            "- Generic sortable data tables, pagination, and filter panels shared across modules",
-            "- Arabic/English localization with i18next"
-          ]
-        },
-        {
-          id: 11603,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React, TypeScript",
-            "- UI: Fluent UI",
-            "- APIs: Auto-generated OpenAPI/REST client",
-            "- i18n: i18next"
-          ]
-        }
-      ]
-    },
-    // Project: Biometric Identity Management System (Enterprise Client)
-    {
-      id: 117,
-      name: "BIMS - Biometric Identity",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-95 left-25",
-      windowPosition: "top-[39vh] left-[2vw]",
-      children: [
-        {
-          id: 11701,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "Biometric Identity Management System (BIMS): Admin portal for an enterprise biometric identity platform covering enrollment, verification, devices, and system administration.",
-            "Delivered the multi-step enrollment wizard with face, fingerprint, iris, and voice capture; now building the identity verification module against matcher APIs.",
-            "Designed a feature-based architecture with React Query, Zod-validated API contracts, and React Hook Form, with accessible Radix UI + Tailwind UI and full Arabic/English RTL support.",
-            "Confidential enterprise client project (03/2026 – Present)."
-          ]
-        },
-        {
-          id: 11702,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Multi-step enrollment wizard with face, fingerprint, iris, and voice capture",
-            "- Identity verification module against matcher APIs",
-            "- Device and system administration",
-            "- Zod-validated API contracts",
-            "- Accessible UI with Radix UI + Tailwind CSS",
-            "- Full Arabic/English RTL support"
-          ]
-        },
-        {
-          id: 11703,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React, TypeScript",
-            "- Data: TanStack Query",
-            "- Forms/Validation: React Hook Form + Zod",
-            "- UI: Radix UI, Tailwind CSS",
-            "- Architecture: Feature-based"
-          ]
-        }
-      ]
-    },
-    // Project 3: TMG Membership Admin Portal (Enterprise Client)
-    {
-      id: 114,
-      name: "TMG Membership Admin Portal",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-95 left-25",
-      windowPosition: "top-[56vh] left-[2vw]",
-      children: [
-        {
-          id: 11401,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "TMG Membership Admin Portal: Enterprise membership management platform for TMG (Talaat Moustafa Group), supporting the full member lifecycle from registration to renewal and expiry.",
-            "Built key modules including a multi-step registration wizard, member management dashboards, waiting lists, quick registration, and General Assembly tracking.",
-            "Integrated OIDC authentication, REST APIs, and enterprise gateway services for a secure and scalable architecture.",
-            "Delivered Arabic/English localization (i18next) with RTL/LTR support and PDF/Excel export functionality.",
-            "Confidential enterprise client project—internal admin portal for TMG membership operations."
-          ]
-        },
-        {
-          id: 11402,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Full member lifecycle: registration, renewal, and expiry management",
-            "- Multi-step registration wizard and quick registration flows",
-            "- Member management dashboards and waiting list workflows",
-            "- General Assembly tracking module",
-            "- OIDC authentication with REST APIs and enterprise gateway integration",
-            "- Arabic/English localization (i18next) with RTL/LTR layout support",
-            "- PDF and Excel export for reporting and operational workflows",
-            "- Reusable Fluent UI components and design-system-driven interfaces"
-          ]
-        },
-        {
-          id: 11403,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Frontend: React, TypeScript, Redux Toolkit, Fluent UI",
-            "- Auth: OIDC authentication",
-            "- APIs: REST APIs, enterprise gateway services",
-            "- i18n: i18next with Arabic/English RTL/LTR support",
-            "- Export: PDF and Excel export functionality",
-            "- Architecture: Reusable component library and design-system-driven UI"
-          ]
-        }
-      ]
-    },
     // Project 1: OnSoftwares
     {
       id: 100,
@@ -555,7 +334,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-20 right-10",
-      windowPosition: "top-[5vh] left-[13vw]",
+      windowPosition: "top-4 left-48",
       children: [
         {
           id: 1061,
@@ -674,7 +453,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-80 left-60",  
-      windowPosition: "top-[22vh] left-[13vw]",
+      windowPosition: "top-36 left-48",
       children: [
         {
           id: 1061,
@@ -723,6 +502,233 @@ const WORK_LOCATION = {
         }
       ]
     },
+    // Project: IHUB Portal (Enterprise Client)
+    {
+      id: 115,
+      name: "IHUB Portal",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-100 left-4",
+      children: [
+        {
+          id: 11501,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "IHUB Portal: International Hub Integration Admin Portal — an enterprise admin portal for managing parties, endpoints, contracts, and integrations between organizations.",
+            "Built the Integrations module end to end (filterable list, validated forms, details view, status toggle) on a typed OpenAPI client service layer with localized error handling.",
+            "Delivered Arabic/English RTL/LTR support and Vitest + React Testing Library unit tests in a lazy-loaded, feature-based architecture.",
+            "Confidential enterprise client project (08/2026 – Present)."
+          ]
+        },
+        {
+          id: 11502,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Management of parties, endpoints, contracts, and integrations",
+            "- Integrations module: filterable list, validated forms, details view, status toggle",
+            "- Typed OpenAPI client service layer with localized error handling",
+            "- Arabic/English localization with RTL/LTR layouts",
+            "- Lazy-loaded, feature-based architecture",
+            "- Unit tests with Vitest + React Testing Library"
+          ]
+        },
+        {
+          id: 11503,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript, Redux Toolkit",
+            "- UI: Fluent UI, Tailwind CSS",
+            "- APIs: Typed OpenAPI client",
+            "- i18n: Arabic/English RTL/LTR",
+            "- Testing: Vitest, React Testing Library"
+          ]
+        }
+      ]
+    },
+    // Project: TMG Marketing Management Tool (Enterprise Client)
+    {
+      id: 116,
+      name: "TMG Marketing Management Tool",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-36 left-4",
+      children: [
+        {
+          id: 11601,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TMG Marketing Management Tool: A campaign management platform for TMG (Talaat Moustafa Group) marketing operations.",
+            "Covers multi-channel campaigns, announcements, audience targeting, and performance reporting, with role-based access control for privileges and employee management.",
+            "Integrated an auto-generated OpenAPI/REST client and built generic sortable data tables, pagination, and filter panels shared across all modules.",
+            "Confidential enterprise client project (04/2026 – Present)."
+          ]
+        },
+        {
+          id: 11602,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Multi-channel campaign management",
+            "- Announcements and audience targeting",
+            "- Performance reporting",
+            "- Role-based access control for privileges and employee management",
+            "- Generic sortable data tables, pagination, and filter panels shared across modules",
+            "- Arabic/English localization with i18next"
+          ]
+        },
+        {
+          id: 11603,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript",
+            "- UI: Fluent UI",
+            "- APIs: Auto-generated OpenAPI/REST client",
+            "- i18n: i18next"
+          ]
+        }
+      ]
+    },
+    // Project: Biometric Identity Management System (Enterprise Client)
+    {
+      id: 117,
+      name: "BIMS - Biometric Identity",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-68 left-4",
+      children: [
+        {
+          id: 11701,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Biometric Identity Management System (BIMS): Admin portal for an enterprise biometric identity platform covering enrollment, verification, devices, and system administration.",
+            "Delivered the multi-step enrollment wizard with face, fingerprint, iris, and voice capture; now building the identity verification module against matcher APIs.",
+            "Designed a feature-based architecture with React Query, Zod-validated API contracts, and React Hook Form, with accessible Radix UI + Tailwind UI and full Arabic/English RTL support.",
+            "Confidential enterprise client project (03/2026 – Present)."
+          ]
+        },
+        {
+          id: 11702,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Multi-step enrollment wizard with face, fingerprint, iris, and voice capture",
+            "- Identity verification module against matcher APIs",
+            "- Device and system administration",
+            "- Zod-validated API contracts",
+            "- Accessible UI with Radix UI + Tailwind CSS",
+            "- Full Arabic/English RTL support"
+          ]
+        },
+        {
+          id: 11703,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript",
+            "- Data: TanStack Query",
+            "- Forms/Validation: React Hook Form + Zod",
+            "- UI: Radix UI, Tailwind CSS",
+            "- Architecture: Feature-based"
+          ]
+        }
+      ]
+    },
+    // Project 3: TMG Membership Admin Portal (Enterprise Client)
+    {
+      id: 114,
+      name: "TMG Membership Admin Portal",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-95 left-25",
+      windowPosition: "top-4 left-4",
+      children: [
+        {
+          id: 11401,
+          name: "Project Overview.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "TMG Membership Admin Portal: Enterprise membership management platform for TMG (Talaat Moustafa Group), supporting the full member lifecycle from registration to renewal and expiry.",
+            "Built key modules including a multi-step registration wizard, member management dashboards, waiting lists, quick registration, and General Assembly tracking.",
+            "Integrated OIDC authentication, REST APIs, and enterprise gateway services for a secure and scalable architecture.",
+            "Delivered Arabic/English localization (i18next) with RTL/LTR support and PDF/Excel export functionality.",
+            "Confidential enterprise client project—internal admin portal for TMG membership operations."
+          ]
+        },
+        {
+          id: 11402,
+          name: "Key Features.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-15 left-30",
+          description: [
+            "- Full member lifecycle: registration, renewal, and expiry management",
+            "- Multi-step registration wizard and quick registration flows",
+            "- Member management dashboards and waiting list workflows",
+            "- General Assembly tracking module",
+            "- OIDC authentication with REST APIs and enterprise gateway integration",
+            "- Arabic/English localization (i18next) with RTL/LTR layout support",
+            "- PDF and Excel export for reporting and operational workflows",
+            "- Reusable Fluent UI components and design-system-driven interfaces"
+          ]
+        },
+        {
+          id: 11403,
+          name: "Tech Stack.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-25 left-40",
+          description: [
+            "- Frontend: React, TypeScript, Redux Toolkit, Fluent UI",
+            "- Auth: OIDC authentication",
+            "- APIs: REST APIs, enterprise gateway services",
+            "- i18n: i18next with Arabic/English RTL/LTR support",
+            "- Export: PDF and Excel export functionality",
+            "- Architecture: Reusable component library and design-system-driven UI"
+          ]
+        }
+      ]
+    },
     // Project 4: FILMPIRE
     {
       id: 101,
@@ -730,7 +736,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[22vh] right-[13vw]",
+      windowPosition: "top-4 left-92",
       children: [
         {
           id: 1011,
@@ -804,7 +810,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 left-80",
-      windowPosition: "top-[5vh] right-[13vw]",
+      windowPosition: "top-36 left-92",
       children: [
         {
           id: 1021,
@@ -876,7 +882,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 right-40",
-      windowPosition: "top-[22vh] right-[2vw]",
+      windowPosition: "top-68 left-92",
       children: [
         {
           id: 1031,
@@ -940,123 +946,7 @@ const WORK_LOCATION = {
       ],
     },
 
-    // Project 6: Xora AI - Enterprise SaaS Platform
-    {
-      id: 105,
-      name: "Xora AI - Enterprise SaaS Platform",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-100 right-60",
-      windowPosition: "top-[5vh] right-[2vw]",
-      children: [
-        {
-          id: 10501,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 right-10",
-          description: [
-            "Xora AI is a state-of-the-art Enterprise SaaS platform designed for global scalability and high-fidelity intelligence.",
-            "Transformed from a high-impact landing page into a full-scale multi-page web application, Xora provides a unified ecosystem for business growth, security, and real-time operational control.",
-            "Includes modules: Intelligence Hub (Home), Enterprise Infrastructure (Features), Trust & Compliance Center (Security), Operational Intelligence (Dashboard), Strategic Scaling (Pricing), Knowledge Acceleration (Resources), The Human Element (About), Direct Advisory (Contact).",
-            "Built with React 18, Vite, Tailwind CSS, Framer Motion, and Lucide React."
-          ]
-        },
-        {
-          id: 10502,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Enterprise-grade security: SOC2 Type II, ISO 27001, Zero Trust Architecture, Quantum-Safe Encryption",
-            "- Sub-2ms average latency, global CDN across 85+ data centers",
-            "- 200+ native enterprise integrations",
-            "- Real-time operational dashboard with live revenue tracking and cluster performance charts",
-            "- Dynamic 'Live Feed' for system-wide activity logs",
-            "- Advanced tiering with technical comparison table",
-            "- Searchable knowledge base with 2,500+ articles",
-            "- AES-256 encrypted contact channel"
-          ]
-        },
-        {
-          id: 10503,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Core: React",
-            "- Routing: React Router",
-            "- Styling: Tailwind CSS with custom design system (Glassmorphism, HSL color palettes)",
-            "- Animations: Framer Motion",
-            "- Icons: Lucide React",
-            "- Scroll Management: react-scroll, custom ScrollToTop",
-            "- Build: npm, Vercel deployment"
-          ]
-        },
-        {
-          id: 10504,
-          name: "Live Demo.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://xora-ai-enterprise-saa-s-platform.vercel.app/",
-          position: "top-10 left-20"
-        },
-        {
-          id: 10505,
-          name: "Source Code.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/Xora-AI-Enterprise-SaaS-Platform",
-          position: "top-20 right-20"
-        },
-        {
-          id: 10506,
-          name: "Screenshots.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/sass5.png"
-        },
-
-        {
-          id: 10507,
-          name: "Screenshots.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/sass6.png"
-        },
-
-        {
-          id: 10508,
-          name: "Screenshots.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/sass7.png"
-        },
-
-        {
-          id: 10508,
-          name: "Screenshots.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/sass3.png"
-        },
-      ]
-    },
+    
     // Project 6: Admin dashboard
     {
       id: 106,
@@ -1064,7 +954,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-120 left-20",
-      windowPosition: "top-[56vh] right-[2vw]",
+      windowPosition: "top-100 left-92",
       children: [
         {
           id: 1061,
@@ -1179,106 +1069,106 @@ const WORK_LOCATION = {
       ]
     },
     // Project 7 : Ecommerce App
-    {
-      id: 109,
-      name: "Ecommerce App",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-180 right-20",
-      windowPosition: "top-[56vh] right-[13vw]",
-      children: [
-        {
-          id: 1091,
-          name: "Project Overview.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-[10vh] right-[50vw]",
-          description: [
-            "EcomForge: A full-featured e-commerce website built with React, featuring product browsing, cart management, and user authentication.",
-            "Designed as a responsive online store demo with dynamic routing and UI components.",
-            "Integrated with Firebase for auth and data storage; styled with Sass and Bootstrap for a modern look.",
-            "Ideal for showcasing frontend e-commerce development skills; deployed on Firebase."
-          ]
-        },
-        {
-          id: 1092,
-          name: "Key Features.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-15 left-30",
-          description: [
-            "- Full authentication and authorization (sign-up, login, protected routes)",
-            "- Responsive design with mobile-friendly layouts",
-            "- Product sliders and carousels via Swiper",
-            "- Multi-page routing (home, shop, cart, profile)",
-            "- Interactive UI elements: Add-to-cart, tooltips/popovers, icons",
-            "- Firebase integration for real-time data and hosting"
-          ]
-        },
-        {
-          id: 1093,
-          name: "Tech Stack.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-25 left-40",
-          description: [
-            "- Core: React",
-            "- Styling: Sass (SCSS), Bootstrap, React-Bootstrap",
-            "- Routing: React Router DOM",
-            "- UI/Interactivity: Swiper, PopperJS, Icofont",
-            "- Backend/Deployment: Firebase (auth, database, hosting)"
-          ]
-        },
-        {
-          id: 1094,
-          name: "Live Demo.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://full-ecommerce-website.web.app/",
-          position: "top-35 right-20"
-        },
-        {
-          id: 1095,
-          name: "Source Code.url",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/hishamrehab/Ecommerce",
-          position: "top-45 left-20"
-        },
-        {
-          id: 1096,
-          name: "ecom.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-55 right-80",
-          imageUrl: "/images/ecom1.png"
-        },
-        {
-          id: 1097,
-          name: "ecom.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-65 left-80",
-          imageUrl: "/images/ecom2.png"
-        },
-        {
-          id: 1098,
-          name: "ecom.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-75 right-80",
-          imageUrl: "/images/ecom3.png"
-        }
-      ]
-    },
+    // {
+    //   id: 109,
+    //   name: "Ecommerce App",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-180 right-20",
+    //   windowPosition: "top-[40vh] right-[25vw]",
+    //   children: [
+    //     {
+    //       id: 1091,
+    //       name: "Project Overview.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-[10vh] right-[50vw]",
+    //       description: [
+    //         "EcomForge: A full-featured e-commerce website built with React, featuring product browsing, cart management, and user authentication.",
+    //         "Designed as a responsive online store demo with dynamic routing and UI components.",
+    //         "Integrated with Firebase for auth and data storage; styled with Sass and Bootstrap for a modern look.",
+    //         "Ideal for showcasing frontend e-commerce development skills; deployed on Firebase."
+    //       ]
+    //     },
+    //     {
+    //       id: 1092,
+    //       name: "Key Features.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-15 left-30",
+    //       description: [
+    //         "- Full authentication and authorization (sign-up, login, protected routes)",
+    //         "- Responsive design with mobile-friendly layouts",
+    //         "- Product sliders and carousels via Swiper",
+    //         "- Multi-page routing (home, shop, cart, profile)",
+    //         "- Interactive UI elements: Add-to-cart, tooltips/popovers, icons",
+    //         "- Firebase integration for real-time data and hosting"
+    //       ]
+    //     },
+    //     {
+    //       id: 1093,
+    //       name: "Tech Stack.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-25 left-40",
+    //       description: [
+    //         "- Core: React",
+    //         "- Styling: Sass (SCSS), Bootstrap, React-Bootstrap",
+    //         "- Routing: React Router DOM",
+    //         "- UI/Interactivity: Swiper, PopperJS, Icofont",
+    //         "- Backend/Deployment: Firebase (auth, database, hosting)"
+    //       ]
+    //     },
+    //     {
+    //       id: 1094,
+    //       name: "Live Demo.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://full-ecommerce-website.web.app/",
+    //       position: "top-35 right-20"
+    //     },
+    //     {
+    //       id: 1095,
+    //       name: "Source Code.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://github.com/hishamrehab/Ecommerce",
+    //       position: "top-45 left-20"
+    //     },
+    //     {
+    //       id: 1096,
+    //       name: "ecom.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-55 right-80",
+    //       imageUrl: "/images/ecom1.png"
+    //     },
+    //     {
+    //       id: 1097,
+    //       name: "ecom.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-65 left-80",
+    //       imageUrl: "/images/ecom2.png"
+    //     },
+    //     {
+    //       id: 1098,
+    //       name: "ecom.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-75 right-80",
+    //       imageUrl: "/images/ecom3.png"
+    //     }
+    //   ]
+    // },
     // Project 8 : GPT Horizon
     // {
     //   id: 107,
@@ -1387,7 +1277,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-160 left-5",
-      windowPosition: "top-[39vh] right-[13vw]",
+      windowPosition: "top-132 left-92",
       children: [
         {
           id: 1081,
@@ -1592,7 +1482,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-220 left-60",
-      windowPosition: "top-[39vh] right-[2vw]",
+      windowPosition: "top-4 left-136",
       children: [
         {
           id: 11101,
@@ -1704,7 +1594,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-[60vh] left-[40vw]",
-      windowPosition: "top-[39vh] left-[13vw]",
+      windowPosition: "top-36 left-136",
       children: [
         {
           id: 11201,
@@ -1900,7 +1790,124 @@ const WORK_LOCATION = {
     //       imageUrl: "/images/techinsight3.png"
     //     }
     //   ]
-    // }
+    // },
+    // // Project 6: Xora AI - Enterprise SaaS Platform
+    // {
+    //   id: 105,
+    //   name: "Xora AI - Enterprise SaaS Platform",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-100 right-60",
+    //   windowPosition: "top-[10vh] right-[50vw]",
+    //   children: [
+    //     {
+    //       id: 10501,
+    //       name: "Project Overview.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 right-10",
+    //       description: [
+    //         "Xora AI is a state-of-the-art Enterprise SaaS platform designed for global scalability and high-fidelity intelligence.",
+    //         "Transformed from a high-impact landing page into a full-scale multi-page web application, Xora provides a unified ecosystem for business growth, security, and real-time operational control.",
+    //         "Includes modules: Intelligence Hub (Home), Enterprise Infrastructure (Features), Trust & Compliance Center (Security), Operational Intelligence (Dashboard), Strategic Scaling (Pricing), Knowledge Acceleration (Resources), The Human Element (About), Direct Advisory (Contact).",
+    //         "Built with React 18, Vite, Tailwind CSS, Framer Motion, and Lucide React."
+    //       ]
+    //     },
+    //     {
+    //       id: 10502,
+    //       name: "Key Features.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-15 left-30",
+    //       description: [
+    //         "- Enterprise-grade security: SOC2 Type II, ISO 27001, Zero Trust Architecture, Quantum-Safe Encryption",
+    //         "- Sub-2ms average latency, global CDN across 85+ data centers",
+    //         "- 200+ native enterprise integrations",
+    //         "- Real-time operational dashboard with live revenue tracking and cluster performance charts",
+    //         "- Dynamic 'Live Feed' for system-wide activity logs",
+    //         "- Advanced tiering with technical comparison table",
+    //         "- Searchable knowledge base with 2,500+ articles",
+    //         "- AES-256 encrypted contact channel"
+    //       ]
+    //     },
+    //     {
+    //       id: 10503,
+    //       name: "Tech Stack.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-25 left-40",
+    //       description: [
+    //         "- Core: React",
+    //         "- Routing: React Router",
+    //         "- Styling: Tailwind CSS with custom design system (Glassmorphism, HSL color palettes)",
+    //         "- Animations: Framer Motion",
+    //         "- Icons: Lucide React",
+    //         "- Scroll Management: react-scroll, custom ScrollToTop",
+    //         "- Build: npm, Vercel deployment"
+    //       ]
+    //     },
+    //     {
+    //       id: 10504,
+    //       name: "Live Demo.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://xora-ai-enterprise-saa-s-platform.vercel.app/",
+    //       position: "top-10 left-20"
+    //     },
+    //     {
+    //       id: 10505,
+    //       name: "Source Code.url",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://github.com/hishamrehab/Xora-AI-Enterprise-SaaS-Platform",
+    //       position: "top-20 right-20"
+    //     },
+    //     {
+    //       id: 10506,
+    //       name: "Screenshots.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 right-80",
+    //       imageUrl: "/images/sass5.png"
+    //     },
+
+    //     {
+    //       id: 10507,
+    //       name: "Screenshots.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 right-80",
+    //       imageUrl: "/images/sass6.png"
+    //     },
+
+    //     {
+    //       id: 10508,
+    //       name: "Screenshots.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 right-80",
+    //       imageUrl: "/images/sass7.png"
+    //     },
+
+    //     {
+    //       id: 10508,
+    //       name: "Screenshots.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 right-80",
+    //       imageUrl: "/images/sass3.png"
+    //     },
+    //   ]
+    // },
   ],
 };
 
@@ -1923,10 +1930,10 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Front-End Developer",
       description: [
-        "I'm Hisham Rehab — a front-end developer based in Cairo, Egypt, with 2+ years of experience building enterprise-grade web applications, SaaS platforms, and large-scale administrative systems.",
+        "I'm Hisham Rehab — a front-end developer based in Cairo, Egypt, with 3+ years of experience building enterprise-grade web applications, SaaS platforms, and large-scale administrative systems.",
         "Core expertise: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Redux Toolkit, TanStack Query, Git.",
         "Currently at Secured Smart Systems (3S Group), building enterprise admin portals for clients such as TMG (Talaat Moustafa Group) with OIDC authentication, role-based access control, and full Arabic/English RTL/LTR localization.",
-        "Previously delivered CMS-driven apps at DATA C: REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, code splitting).",
+        "Previously delivered CMS-driven apps at DATA C and freelance projects: REST & GraphQL API integrations, GSAP / Framer Motion / Three.js animations, and performance improvements of up to 50% (using React Query, lazy loading, code splitting).",
         "I leverage AI-assisted development tools (Claude Code, Cursor, Codex, Copilot) and integrate AI capabilities (OpenAI, Claude, Gemini) into modern web applications.",
         "Priorities: clean & maintainable code, intuitive user experience, fully responsive design, and production-grade scalability."
       ],
