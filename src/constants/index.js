@@ -334,7 +334,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-20 right-10",
-      windowPosition: "top-4 left-48",
+      windowPosition: "top-[4vh] left-52",
       children: [
         {
           id: 1061,
@@ -453,7 +453,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-80 left-60",  
-      windowPosition: "top-36 left-48",
+      windowPosition: "top-[25vh] left-52",
       children: [
         {
           id: 1061,
@@ -509,7 +509,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-95 left-25",
-      windowPosition: "top-100 left-4",
+      windowPosition: "top-[4vh] left-10",
       children: [
         {
           id: 11501,
@@ -565,7 +565,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-95 left-25",
-      windowPosition: "top-36 left-4",
+      windowPosition: "top-[25vh] left-10",
       children: [
         {
           id: 11601,
@@ -620,7 +620,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-95 left-25",
-      windowPosition: "top-68 left-4",
+      windowPosition: "top-[46vh] left-10",
       children: [
         {
           id: 11701,
@@ -676,7 +676,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-95 left-25",
-      windowPosition: "top-4 left-4",
+      windowPosition: "top-[67vh] left-10",
       children: [
         {
           id: 11401,
@@ -736,7 +736,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-4 left-92",
+      windowPosition: "top-[25vh] right-52",
       children: [
         {
           id: 1011,
@@ -810,7 +810,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 left-80",
-      windowPosition: "top-36 left-92",
+      windowPosition: "top-[4vh] right-52",
       children: [
         {
           id: 1021,
@@ -882,7 +882,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 right-40",
-      windowPosition: "top-68 left-92",
+      windowPosition: "top-[4vh] right-10",
       children: [
         {
           id: 1031,
@@ -954,7 +954,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-120 left-20",
-      windowPosition: "top-100 left-92",
+      windowPosition: "top-[46vh] right-10",
       children: [
         {
           id: 1061,
@@ -1277,7 +1277,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-160 left-5",
-      windowPosition: "top-132 left-92",
+      windowPosition: "top-[46vh] right-52",
       children: [
         {
           id: 1081,
@@ -1482,7 +1482,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-220 left-60",
-      windowPosition: "top-4 left-136",
+      windowPosition: "top-[25vh] right-10",
       children: [
         {
           id: 11101,
@@ -1594,7 +1594,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-[60vh] left-[40vw]",
-      windowPosition: "top-36 left-136",
+      windowPosition: "top-[46vh] left-52",
       children: [
         {
           id: 11201,
